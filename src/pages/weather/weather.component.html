@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Weather
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item class="input input-md">
+    <ion-icon name="pin" item-left></ion-icon>
+
+      <input places-auto-complete #box style="border:none;width:100%"
+        (initialized$)="initialized($event)"
+        (place_changed)="placeChanged(place)"
+        [types]="['geocode']"  placeholder="Enter a location" />
+        <button class="text-input-clear-icon button-md button-clear button-clear-md" type="button" ><span class="button-inner"></span><div class="button-effect"></div></button>
+
+
+    <button ion-button small (click)='search(box.value);addChipCity(box.value)' item-right>add</button>
+  </ion-item>
+  <ion-chip *ngFor="let ship of cities" >
+  <ion-label (click)='search(ship.name);' >{{ship.name}}</ion-label>
+    <button ion-button clear color="light" (click)="delete(ship)">
+      <ion-icon name="close-circle"></ion-icon>
+    </button>
+  </ion-chip>
+
+
+  <ion-card *ngIf='data'>
+
+    <ion-card-header>{{data.name}},{{data.sys.country}} </ion-card-header>
+    <ion-card-content>
+    <ion-item text-wrap>
+      <ion-thumbnail item-left>
+        <img  src="http://openweathermap.org/img/w/{{data.weather[0].icon}}.png" >
+      </ion-thumbnail>
+      <h1>  {{data.main.temp}} °C </h1>
+      <h4>{{data.weather[0].main}} ({{data.weather[0].description}})</h4>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="thermometer" item-left></ion-icon>
+      Temp
+      <ion-badge item-right>{{data.main.temp_min}} °C to {{data.main.temp_max}} °C </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="water" item-left></ion-icon>
+      Humidity
+      <ion-badge item-right>{{ data.main.humidity }} %</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="flag" item-left></ion-icon>
+      Wind
+      <ion-badge item-right>{{ data.wind.speed }}°, {{ data.wind.speed }} km/s </ion-badge>
+    </ion-item>
+  </ion-card-content>
+
+
+
+
+  </ion-card>
+
+
+
+
+
+
+
+
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer>

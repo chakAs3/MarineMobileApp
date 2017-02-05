@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Boat Care Products
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-title><h5>{{mainCategoryName}}</h5></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-list-header>
+      Product List
+    </ion-list-header>
+    <ion-item ion-item *ngFor="let p of categories_products | async"   text-wrap>
+      <ion-thumbnail item-left>
+        <img [src]='p.image'>
+      </ion-thumbnail>
+      <p>{{p.name }}</p>
+      <button ion-button clear item-right>View</button>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title item-right> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer>

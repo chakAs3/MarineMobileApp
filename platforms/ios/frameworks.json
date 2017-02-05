@@ -1,0 +1,18 @@
+{
+    "AddressBook.framework": 1,
+    "CoreText.framework": 2,
+    "SafariServices.framework": 1,
+    "Security.framework": 1,
+    "SystemConfiguration.framework": 2,
+    "libz.tbd": 2,
+    "libz.dylib": 1,
+    "Accelerate.framework": 1,
+    "CoreData.framework": 1,
+    "CoreLocation.framework": 1,
+    "GLKit.framework": 1,
+    "ImageIO.framework": 1,
+    "libc++.tbd": 1,
+    "OpenGLES.framework": 1,
+    "QuartzCore.framework": 1,
+    "UIKit.framework": 1
+}

@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-card *ngIf="isAuth==false">
+      <ion-card-header><h3>Login to 3M Marine</h3></ion-card-header>
+      <ion-card-content>
+      <p>
+        Welcome to your marine application to get connected with your boat and the marine community .
+      </p>
+
+      <div> Message : <pre>
+        {{facebookCredentialText | json}}
+        <br>
+        {{message | json}}
+      </pre> </div>
+      <br>
+      <form [formGroup]="loginForm">
+       <ion-list>
+
+           <ion-item>
+               <ion-label floating>Email</ion-label>
+               <ion-input type="text" formControlName="email"></ion-input>
+           </ion-item>
+
+           <ion-item>
+               <ion-label floating>Password</ion-label>
+               <ion-input type="password" formControlName="password"></ion-input>
+           </ion-item>
+       </ion-list>
+
+       <div padding>
+         <button ion-button primary block (click)="signinWithEmail()" [disabled]="!loginForm.valid">Sign In</button>
+       </div>
+
+       <div padding>
+         <button ion-button full clear favorite (click)="createAccount()" [disabled]="!loginForm.valid">
+             <ion-icon name="person"></ion-icon>
+             Create an Account</button>
+       </div>
+      </form>
+      <hr>
+      <button ion-button secondary full (click)="loginWithFaceBook()">
+          <ion-icon name="logo-facebook"></ion-icon>Use My Facebook Account
+      </button>
+      <button ion-button secondary full (click)="signInWithGoogle()">
+         <ion-icon name="logo-google"></ion-icon> Use My Google Account
+      </button>
+
+    </ion-card-content>
+
+</ion-card>
+
+
+
+    <ion-card *ngIf="isAuth">
+       <ion-card-header>
+          <img style="width:60px"  [src]="user.avatar || 'assets/imgs/avatar.jpeg'">
+          <ion-card-title>{{ user.name }}</ion-card-title>
+          <p>{{ user.email || '(no email)' }}</p>
+       </ion-card-header>
+
+
+
+       <ion-card-content>
+          <p>You are logged in using <strong>{{ user.provider }}</strong></p>
+          <button ion-button secondary (click)="logout()">
+            <ion-icon name="log-out"></ion-icon>
+            Logout
+          </button>
+       </ion-card-content>
+
+
+
+    </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer>

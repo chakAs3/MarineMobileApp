@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Users</ion-title>
+        <ion-buttons end>
+            <ion-spinner color="light" *ngIf="!(users | async)"></ion-spinner>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <span *ngFor="let user of users | async">
+        <a ion-item (click)="openChat(user.$key)" *ngIf="user.$key !== uid">
+             <ion-avatar item-left>
+                <img *ngIf="!user.picture" src="assets/imgs/default.jpeg">
+                <img *ngIf="user.picture" src="{{user.picture}}">
+             </ion-avatar>
+             <h2>{{user.email}}</h2>
+        </a>
+      </span>
+    </ion-list>
+</ion-content>

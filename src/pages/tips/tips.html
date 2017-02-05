@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Tips & Tricks
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-list-header>
+      Try out tips & tricks
+    </ion-list-header>
+    <ion-card *ngFor="let p of tips | async" >
+      <img [src]="p.image"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{p.name}}
+          </ion-card-title>
+        <p>
+          {{p.description}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer>
