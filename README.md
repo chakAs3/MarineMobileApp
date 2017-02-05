@@ -5,9 +5,9 @@
 
 
 
-Deployment Platform :  Android , IOS , Windows Phone .
-Front End Frameworks : Angular 2 , Ionic 2 .
-Back End : Real-time FireBase 3.
+* Deployment Platform :  Android , IOS , Windows Phone .
+* Front End Frameworks : Angular 2 , Ionic 2 .
+* Back End : Real-time FireBase 3.
 
 
 #Structure and Skeleton :
