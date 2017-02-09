@@ -74,6 +74,10 @@
 		D8E5EC44E92E4FEBA3D6476C /* MyReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B522847846A4C7C85A2776C /* MyReachability.m */; };
 		3719DC26135F49CF914C069A /* MyPluginLayerDebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = A17864D2765A4825AB4FDAB8 /* MyPluginLayerDebugView.m */; };
 		669DA6649E5D458394A8F967 /* MyPluginScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F282703A93574CFAB8D407EF /* MyPluginScrollView.m */; };
+		EC6E4B995FD4407691D3EAF7 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C782C3EE2049D58ABC28D5 /* CDVLocation.m */; };
+		7E49D27018FC48F9B676C033 /* CDVCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5527784933024250B6703EA2 /* CDVCompass.m */; };
+		41D457C2D1174687A63CDD58 /* CDVAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F441BA204A648B0AAF3D1AD /* CDVAccelerometer.m */; };
+		B03428A3F85E48E584A57D17 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0346F98A42A64E67B8AFAB0F /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +206,13 @@
 		D1B564A71F774C5AB2B7B1C0 /* MyReachability.h */ = {isa = PBXFileReference; name = "MyReachability.h"; path = "cordova-plugin-googlemaps/MyReachability.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		D2DE6F09A9A04007AD1533EC /* MyPluginLayerDebugView.h */ = {isa = PBXFileReference; name = "MyPluginLayerDebugView.h"; path = "cordova-plugin-googlemaps/MyPluginLayerDebugView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		E658530F4E9C462991E2FAEC /* MyPluginScrollView.h */ = {isa = PBXFileReference; name = "MyPluginScrollView.h"; path = "cordova-plugin-googlemaps/MyPluginScrollView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B6C782C3EE2049D58ABC28D5 /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B0B03D5FF0CB43F38413276B /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5527784933024250B6703EA2 /* CDVCompass.m */ = {isa = PBXFileReference; name = "CDVCompass.m"; path = "cordova-plugin-device-orientation/CDVCompass.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9008B09D587A4D25AC99618B /* CDVCompass.h */ = {isa = PBXFileReference; name = "CDVCompass.h"; path = "cordova-plugin-device-orientation/CDVCompass.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7F441BA204A648B0AAF3D1AD /* CDVAccelerometer.m */ = {isa = PBXFileReference; name = "CDVAccelerometer.m"; path = "cordova-plugin-device-motion/CDVAccelerometer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1920FEA675A74D43BE3DA011 /* CDVAccelerometer.h */ = {isa = PBXFileReference; name = "CDVAccelerometer.h"; path = "cordova-plugin-device-motion/CDVAccelerometer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0346F98A42A64E67B8AFAB0F /* CoreMotion.framework */ = {isa = PBXFileReference; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +250,7 @@
 				8217531A994B432C9535E2AE /* GoogleMapsBase.framework in Frameworks */,
 				9CD75A7AAAC34DC397F5F001 /* GoogleMaps.framework in Frameworks */,
 				02BCDF20091A4040A50742A2 /* GoogleMapsCore.framework in Frameworks */,
+				B03428A3F85E48E584A57D17 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,7 @@
 				BDD8CF747EBE4143B95F016B /* GoogleMapsBase.framework */,
 				45C39373CC504DA1ABA8C7C6 /* GoogleMaps.framework */,
 				DCF7884C0E844AF8A00709B1 /* GoogleMapsCore.framework */,
+				0346F98A42A64E67B8AFAB0F /* CoreMotion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -422,6 +435,12 @@
 				D1B564A71F774C5AB2B7B1C0 /* MyReachability.h */,
 				D2DE6F09A9A04007AD1533EC /* MyPluginLayerDebugView.h */,
 				E658530F4E9C462991E2FAEC /* MyPluginScrollView.h */,
+				B6C782C3EE2049D58ABC28D5 /* CDVLocation.m */,
+				B0B03D5FF0CB43F38413276B /* CDVLocation.h */,
+				5527784933024250B6703EA2 /* CDVCompass.m */,
+				9008B09D587A4D25AC99618B /* CDVCompass.h */,
+				7F441BA204A648B0AAF3D1AD /* CDVAccelerometer.m */,
+				1920FEA675A74D43BE3DA011 /* CDVAccelerometer.h */,
 			);
 			name = Plugins;
 			path = "3M Marine/Plugins";
@@ -566,6 +585,9 @@
 				D8E5EC44E92E4FEBA3D6476C /* MyReachability.m in Sources */,
 				3719DC26135F49CF914C069A /* MyPluginLayerDebugView.m in Sources */,
 				669DA6649E5D458394A8F967 /* MyPluginScrollView.m in Sources */,
+				EC6E4B995FD4407691D3EAF7 /* CDVLocation.m in Sources */,
+				7E49D27018FC48F9B676C033 /* CDVCompass.m in Sources */,
+				41D457C2D1174687A63CDD58 /* CDVAccelerometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

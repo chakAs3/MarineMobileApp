@@ -39,10 +39,23 @@
             "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Show your location on the map",
             "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Trace your location on the map",
             "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-geolocation": {
+            "GEOLOCATION_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     },
     "dependent_plugins": {
         "com.googlemaps.ios": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     }

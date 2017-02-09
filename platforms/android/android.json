@@ -63,6 +63,18 @@
                         {
                             "xml": "<access origin=\"https://accounts.google.com/*\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Compass\"><param name=\"android-package\" value=\"org.apache.cordova.deviceorientation.CompassListener\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"android-package\" value=\"org.apache.cordova.devicemotion.AccelListener\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -107,7 +119,21 @@
                             "count": 1
                         }
                     ],
-                    "/manifest/application": []
+                    "/manifest/application": [],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.location.gps\" />",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -137,6 +163,18 @@
             "PACKAGE_NAME": "com.trix.Mmarine381299"
         },
         "cordova-plugin-googleplus": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-device-motion": {
             "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     },
@@ -190,6 +228,60 @@
             "clobbers": [
                 "window.plugins.googleplus"
             ]
+        },
+        {
+            "id": "cordova-plugin-geolocation.geolocation",
+            "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "navigator.geolocation"
+            ]
+        },
+        {
+            "id": "cordova-plugin-geolocation.PositionError",
+            "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+            "pluginId": "cordova-plugin-geolocation",
+            "runs": true
+        },
+        {
+            "id": "cordova-plugin-device-orientation.CompassError",
+            "file": "plugins/cordova-plugin-device-orientation/www/CompassError.js",
+            "pluginId": "cordova-plugin-device-orientation",
+            "clobbers": [
+                "CompassError"
+            ]
+        },
+        {
+            "id": "cordova-plugin-device-orientation.CompassHeading",
+            "file": "plugins/cordova-plugin-device-orientation/www/CompassHeading.js",
+            "pluginId": "cordova-plugin-device-orientation",
+            "clobbers": [
+                "CompassHeading"
+            ]
+        },
+        {
+            "id": "cordova-plugin-device-orientation.compass",
+            "file": "plugins/cordova-plugin-device-orientation/www/compass.js",
+            "pluginId": "cordova-plugin-device-orientation",
+            "clobbers": [
+                "navigator.compass"
+            ]
+        },
+        {
+            "id": "cordova-plugin-device-motion.Acceleration",
+            "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "Acceleration"
+            ]
+        },
+        {
+            "id": "cordova-plugin-device-motion.accelerometer",
+            "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "navigator.accelerometer"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -200,6 +292,10 @@
         "cordova-plugin-statusbar": "2.2.1",
         "cordova-plugin-whitelist": "1.3.1",
         "ionic-plugin-keyboard": "2.2.1",
-        "cordova-plugin-googleplus": "5.1.1"
+        "cordova-plugin-googleplus": "5.1.1",
+        "cordova-plugin-compat": "1.1.0",
+        "cordova-plugin-geolocation": "2.4.1",
+        "cordova-plugin-device-orientation": "1.0.5",
+        "cordova-plugin-device-motion": "1.2.3"
     }
 }

@@ -110,7 +110,7 @@
     <key>Google Maps API Key</key>
     <string>YOUR_IOS_API_KEY_IS_HERE</string>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>$NSLocationWhenInUseUsageDescription</string>
+    <string/>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>$NSLocationAlwaysUsageDescription</string>
   </dict>

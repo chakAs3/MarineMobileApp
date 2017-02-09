@@ -13,6 +13,9 @@ import { TipsPage } from '../pages/tips/tips';
 import { WeatherComponent } from '../pages/weather/weather.component';
 import { ContestIntroPage } from '../pages/contest/contest-intro';
 import { StoreLocator } from '../pages/store-locator/store-locator';
+import { UtilitiesTabsPage } from '../pages/utilities-tabs/tabs';
+import { CompassPage } from '../pages/compass/compass';
+import { NautChartPage } from '../pages/naut-chart/naut-chart';
 
 import { MessengerTabsPage } from '../pages/tabs/tabs';
 import { Users_Page } from '../pages/users/users';
@@ -61,7 +64,10 @@ const firebaseConfig = {
     Chats_Page,
     ChatViewPage,
     StoreLocator,
-    Login
+    Login,
+    UtilitiesTabsPage,
+    CompassPage,
+    NautChartPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -89,7 +95,10 @@ const firebaseConfig = {
     Chats_Page,
     ChatViewPage,
     StoreLocator,
-    Login
+    Login,
+    UtilitiesTabsPage,
+    CompassPage,
+    NautChartPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},AppService,AuthProvider, ChatsProvider, UserProvider, UtilProvider, Storage]
 })

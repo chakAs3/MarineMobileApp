@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/chakirqatab/Documents/Trix workspace/Apps/3MMarine/platforms/android/CordovaLib/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/chakirqatab/Documents/Trix workspace/Apps/3MMarine/platforms/android/CordovaLib/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/chakirqatab/Documents/Trix workspace/Apps/3MMarineApp/platforms/android/CordovaLib/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/chakirqatab/Documents/Trix workspace/Apps/3MMarineApp/platforms/android/CordovaLib/src/debug/shaders"/></dataSet></merger>

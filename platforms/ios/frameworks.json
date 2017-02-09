@@ -8,11 +8,12 @@
     "libz.dylib": 1,
     "Accelerate.framework": 1,
     "CoreData.framework": 1,
-    "CoreLocation.framework": 1,
+    "CoreLocation.framework": 3,
     "GLKit.framework": 1,
     "ImageIO.framework": 1,
     "libc++.tbd": 1,
     "OpenGLES.framework": 1,
     "QuartzCore.framework": 1,
-    "UIKit.framework": 1
+    "UIKit.framework": 1,
+    "CoreMotion.framework": 1
 }

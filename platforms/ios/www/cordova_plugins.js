@@ -72,6 +72,78 @@ module.exports = [
         "clobbers": [
             "cordova-plugin-googlemaps"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
+        "id": "cordova-plugin-geolocation.Coordinates",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "Coordinates"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+        "id": "cordova-plugin-geolocation.PositionError",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "PositionError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-geolocation/www/Position.js",
+        "id": "cordova-plugin-geolocation.Position",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "Position"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
+        "id": "cordova-plugin-geolocation.geolocation",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "navigator.geolocation"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device-orientation/www/CompassError.js",
+        "id": "cordova-plugin-device-orientation.CompassError",
+        "pluginId": "cordova-plugin-device-orientation",
+        "clobbers": [
+            "CompassError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device-orientation/www/CompassHeading.js",
+        "id": "cordova-plugin-device-orientation.CompassHeading",
+        "pluginId": "cordova-plugin-device-orientation",
+        "clobbers": [
+            "CompassHeading"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device-orientation/www/compass.js",
+        "id": "cordova-plugin-device-orientation.compass",
+        "pluginId": "cordova-plugin-device-orientation",
+        "clobbers": [
+            "navigator.compass"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+        "id": "cordova-plugin-device-motion.Acceleration",
+        "pluginId": "cordova-plugin-device-motion",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+        "id": "cordova-plugin-device-motion.accelerometer",
+        "pluginId": "cordova-plugin-device-motion",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -86,7 +158,11 @@ module.exports.metadata =
     "cordova-plugin-facebook4": "1.7.4",
     "cordova-plugin-googleplus": "5.1.1",
     "com.googlemaps.ios": "2.1.1",
-    "cordova-plugin-googlemaps": "1.4.0"
+    "cordova-plugin-googlemaps": "1.4.0",
+    "cordova-plugin-compat": "1.1.0",
+    "cordova-plugin-geolocation": "2.4.1",
+    "cordova-plugin-device-orientation": "1.0.5",
+    "cordova-plugin-device-motion": "1.2.3"
 }
 // BOTTOM OF METADATA
 });

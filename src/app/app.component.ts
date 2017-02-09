@@ -11,6 +11,8 @@ import { WeatherComponent } from '../pages/weather/weather.component';
 import { ContestIntroPage } from '../pages/contest/contest-intro';
 import { MessengerTabsPage }  from '../pages/tabs/tabs';
 import { StoreLocator } from '../pages/store-locator/store-locator'
+import { UtilitiesTabsPage }  from '../pages/utilities-tabs/tabs';
+
 
 
 @Component({
@@ -31,7 +33,7 @@ export class MyApp {
       { title: 'Boat Care', component: ProductsPage, icon: "boat"},
       { title: 'Help Request', component: HelpRequestPage, icon: "help-buoy" },
       { title: 'Tips and Tricks', component: TipsPage, icon :"bulb" },
-      { title: 'Marine Utilities', component: WeatherComponent, icon :"compass" },
+      { title: 'Marine Utilities', component: UtilitiesTabsPage, icon :"compass" },
       { title: 'Contest and Loyalty Points', component: ContestIntroPage, icon :"cash" },
       { title: '3M Messenger', component: MessengerTabsPage, icon:"chatbubbles" },
       { title: '3M Stores', component: StoreLocator, icon:"cart"  },

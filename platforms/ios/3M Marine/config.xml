@@ -82,9 +82,18 @@
     <feature name="TileOverlay">
         <param name="ios-package" value="TileOverlay" />
     </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <feature name="Compass">
+        <param name="ios-package" value="CDVCompass" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="ios-package" value="CDVAccelerometer" />
+    </feature>
     <name>3M Marine</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <description>First Marine App.</description>
+    <author email="hi@ionicframework" href="http://ionicframework.com/">Trix Team(chakir qatab)</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
@@ -126,8 +135,6 @@
     <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
     <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     <preference name="AllowInlineMediaPlayback" value="false" />
-    <preference name="BackupWebStorage" value="none" />
-    <preference name="DisallowOverscroll" value="true" />
     <preference name="EnableViewportScale" value="false" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
@@ -142,7 +149,9 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="SplashShowOnlyFirstTime" value="false" />

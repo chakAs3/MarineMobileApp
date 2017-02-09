@@ -22479,6 +22479,13 @@ ion-toolbar ion-title h5 {
   border: none;
 }
 
+page-compass .compass-visual .compass-arrow {
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Safari */
+  transform: rotate(180deg);
+}
+
 .tutorial-page .toolbar-background {
   background: #fff;
   border-color: transparent;

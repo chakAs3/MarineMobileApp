@@ -32,7 +32,20 @@
         },
         "cordova-plugin-googleplus": {
             "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        }
+    }
 }
