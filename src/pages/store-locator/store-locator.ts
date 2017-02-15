@@ -52,16 +52,12 @@ export class StoreLocator {
 	constructor ( public appService:AppService) {}
 
   ngAfterViewInit() {
+
    this.loadMap();
+	 
   }
 
   loadMap() {
-
-    // make sure to create following structure in your view.html file
-    // and add a height (for example 100%) to it, else the map won't be visible
-    // <ion-content>
-    //  <div #map id="map" style="height:100%;"></div>
-    // </ion-content>
 
     // create a new map by passing HTMLElement
     let element: HTMLElement = document.getElementById('map');
@@ -70,7 +66,7 @@ export class StoreLocator {
 
     //let map = new GoogleMap(element);
 
-    let latLng = new google.maps.LatLng(25.2847538,55.3530651);
+   let latLng = new google.maps.LatLng(25.2847538,55.3530651);
 
    let mapOptions = {
      center: latLng,
@@ -129,41 +125,40 @@ export class StoreLocator {
 		//
 	  //   }
 
+		createMarkerFromData(place) {
+			let placeLoc = {lat: place.coords.lant, lng: place.coords.lang};
 
-			createMarkerFromData(place) {
-        let placeLoc = {lat: place.coords.lant, lng: place.coords.lang};
+			let marker = new google.maps.Marker({
+				map: this.map,
+				position: placeLoc
+			});
+			this.markers[place.$key]=marker ;
 
-        let marker = new google.maps.Marker({
-          map: this.map,
-          position: placeLoc
-	      });
-				this.markers[place.$key]=marker ;
+			google.maps.event.addListener(marker, 'click', ()=> {
+					this.infowindow.setContent(place.title);
+					this.infowindow.open(this.map,marker);
+				});
 
-	      google.maps.event.addListener(marker, 'click', ()=> {
-	          this.infowindow.setContent(place.title);
-	          this.infowindow.open(this.map,marker);
-	        });
+		}
 
-	    }
+		navigateTo(s){
+			//window.open("google.navigation:q=23.3728831,85.3372199&mode=d" , '_system');
 
-			navigateTo(s){
-				//window.open("google.navigation:q=23.3728831,85.3372199&mode=d" , '_system');
+			let browser = new InAppBrowser(`google.navigation:q=${s.coords.lant},${s.coords.lang}&mode=d`, '_system');
+			browser.show();
+		}
 
-				let browser = new InAppBrowser(`google.navigation:q=${s.coords.lant},${s.coords.lang}&mode=d`, '_system');
-				browser.show();
-			}
+		showInMap(s){
 
-			showInMap(s){
+			let marker = this.markers[s.$key];
+			this.infowindow.setContent(s.title);
+			this.infowindow.open(this.map,marker);
 
-				let marker = this.markers[s.$key];
-				this.infowindow.setContent(s.title);
-				this.infowindow.open(this.map,marker);
+		}
 
-			}
+		callStore(s){
 
-			callStore(s){
-
-			}
+		}
 
 
 }
