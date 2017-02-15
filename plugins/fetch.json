@@ -117,5 +117,21 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@~1.3.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-cszbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-cszbar"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

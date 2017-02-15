@@ -9,7 +9,7 @@
 
 <ion-content class="tutorial-page">
 
-  <ion-slides pager>
+  <ion-slides pager *ngIf="scannedCode==null">
     <ion-slide *ngFor="let slide of slides">
       <ion-toolbar>
         <ion-buttons end>
@@ -25,10 +25,18 @@
       </ion-toolbar>
       <img src="https://raw.githubusercontent.com/driftyco/ionic-preview-app/master/src/assets/img/ica-slidebox-img-4.png" class="slide-image"/>
       <h2 class="slide-title">Ready to Play?</h2>
-      <button ion-button large clear icon-right color="primary">
+      <button ion-button large clear icon-right color="primary" (click)="startScan()">
         Continue
         <ion-icon name="arrow-forward"></ion-icon>
       </button>
     </ion-slide>
   </ion-slides>
+  <ion-card *ngIf="scannedCode">
+    <ion-card-header>
+      Your QR Code :
+    </ion-card-header>
+    <ion-card-content>
+      {{scannedCode}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

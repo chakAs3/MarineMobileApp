@@ -12,9 +12,24 @@
 <ion-content padding>
 
    <div #map id="map" style="height:50%;"></div>
-   <div id="panel" style="height:50%;"></div>
 
+   <ion-list>
+     <ion-item  *ngFor="let s of stores | async " (click)='showInMap(s)'>
+       <div class="title"><h5> {{ s.title }}</h5></div>
+       <p>{{ s.address }}</p>
+       <button ion-button icon-left clear small (click)='navigateTo(s)' left>
+         <ion-icon name="navigate"></ion-icon>
+         <div>Directions</div>
+       </button>
+       <button ion-button icon-left clear small (click)='callStore(s)' left>
+         <ion-icon name="call"></ion-icon>
+         <div>Call</div>
+       </button>
 
+     </ion-item>
+
+   </ion-list>
+   <div  #panel id="panel" style="height:20%">  </div>
 </ion-content>
 
 

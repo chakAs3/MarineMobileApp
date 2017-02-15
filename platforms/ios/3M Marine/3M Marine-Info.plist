@@ -36,10 +36,19 @@
     <true/>
     <key>NSAppTransportSecurity</key>
     <dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
       <key>NSExceptionDomains</key>
       <dict>
         <key>ionic.local</key>
         <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+        <key>*.com/*</key>
+        <dict>
+          <key>NSIncludesSubdomains</key>
+          <true/>
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
         </dict>
@@ -62,8 +71,6 @@
         <key>accounts.google.com</key>
         <dict/>
       </dict>
-      <key>NSAllowsArbitraryLoads</key>
-      <true/>
     </dict>
     <key>FacebookAppID</key>
     <string>3618d4f0</string>

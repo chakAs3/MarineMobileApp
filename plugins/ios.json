@@ -49,6 +49,12 @@
         },
         "cordova-plugin-device-motion": {
             "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-cszbar": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     },
     "dependent_plugins": {

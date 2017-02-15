@@ -18,13 +18,13 @@
     <ion-list-header>
       Browse By Category
     </ion-list-header>
-    <ion-item ion-item *ngFor="let p of categories | async"   >
+    <ion-item ion-item *ngFor="let p of families " (click)='openSubCategories(p)'  text-wrap>
       <ion-avatar item-left>
-        <img [src]='p.image'>
+        <img [src]='(p.info.image && p.info.image.length>10)?p.info.image : "http://boatpaintguide.com/wp-content/uploads/3M-Marine-Supplies.jpg"'>
       </ion-avatar>
-      <h2>{{p.name }}</h2>
-      <p>3M Main Category</p>
-      <button ion-button clear item-right (click)='openSubCategories(p)'>View</button>
+      <h2>{{p.info.name }}</h2>
+
+      <!-- <button ion-button clear item-right (click)='openSubCategories(p)'>View</button> -->
     </ion-item>
 
   </ion-list>

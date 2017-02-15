@@ -9,6 +9,8 @@ import { Login } from '../pages/login/login';
 import { ProductsPage } from '../pages/products/products';
 import { CategoriesPage } from '../pages/products/categories';
 import { CategoryProductsPage } from '../pages/products/categories_products';
+import { ProductDetailsPage } from '../pages/products/product_details';
+
 import { TipsPage } from '../pages/tips/tips';
 import { WeatherComponent } from '../pages/weather/weather.component';
 import { ContestIntroPage } from '../pages/contest/contest-intro';
@@ -67,7 +69,8 @@ const firebaseConfig = {
     Login,
     UtilitiesTabsPage,
     CompassPage,
-    NautChartPage
+    NautChartPage,
+    ProductDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -98,7 +101,8 @@ const firebaseConfig = {
     Login,
     UtilitiesTabsPage,
     CompassPage,
-    NautChartPage
+    NautChartPage,
+    ProductDetailsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},AppService,AuthProvider, ChatsProvider, UserProvider, UtilProvider, Storage]
 })

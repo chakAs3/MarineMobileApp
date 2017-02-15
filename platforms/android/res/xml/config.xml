@@ -42,12 +42,22 @@
     <feature name="Accelerometer">
         <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="CsZBar">
+        <param name="android-package" value="org.cloudsky.cordovaPlugins.ZBar" />
+    </feature>
     <name>3M Marine</name>
     <description>First Marine App.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Trix Team(chakir qatab)</author>
     <content src="index.html" />
     <access origin="*" />
+    <allow-navigation href="*" />
     <allow-navigation href="http://ionic.local/*" />
+    <allow-navigation href="*youtube*" />
+    <allow-navigation href="*ytimg*" />
+    <allow-navigation href="*://*.*.com/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -85,4 +95,5 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
 </widget>

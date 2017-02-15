@@ -144,6 +144,23 @@ module.exports = [
         "clobbers": [
             "navigator.accelerometer"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-cszbar/www/zbar.js",
+        "id": "cordova-plugin-cszbar.zBar",
+        "pluginId": "cordova-plugin-cszbar",
+        "clobbers": [
+            "cloudSky.zBar"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -162,7 +179,9 @@ module.exports.metadata =
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-geolocation": "2.4.1",
     "cordova-plugin-device-orientation": "1.0.5",
-    "cordova-plugin-device-motion": "1.2.3"
+    "cordova-plugin-device-motion": "1.2.3",
+    "cordova-plugin-inappbrowser": "1.6.1",
+    "cordova-plugin-cszbar": "1.3.1"
 }
 // BOTTOM OF METADATA
 });

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ZBar } from 'ionic-native';
+
 
 @Component({
   templateUrl: 'contest-intro.html'
@@ -23,4 +25,23 @@ export class ContestIntroPage {
       image: "https://raw.githubusercontent.com/driftyco/ionic-preview-app/master/src/assets/img/ica-slidebox-img-1.png",
     }
   ];
+  constructor(){
+  }
+  scannedCode ;
+
+  startScan(){
+    let zBarOptions = {
+      flash: "off",
+      drawSight: false
+    };
+
+    ZBar.scan(zBarOptions)
+    .then(result => {
+      console.log(result); // Scanned code
+      this.scannedCode = result;
+    })
+    .catch(error => {
+      console.log(error); // Error message
+    });
+  }
 }

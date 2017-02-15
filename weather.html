@@ -1,9 +1,0 @@
-<script>
-  var callbackFunction = function(data) {
-    console.log(data);
-  //  var wind = data.query.results.channel.wind;
-    //console.log(wind);
-  };
-</script>
-
-<script src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='dubai')&format=json&callback=callbackFunction"></script>

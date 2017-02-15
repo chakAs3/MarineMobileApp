@@ -2,6 +2,10 @@ import { Component }        from '@angular/core';
 
 import { Observable }       from 'rxjs/Observable';
 import { Subject }          from 'rxjs/Subject';
+import { InAppBrowser } from 'ionic-native';
+
+import { FirebaseListObservable } from 'angularfire2';
+import { AppService } from '../../app/app.service'
 //import { Ng2MapComponent } from 'ng2-map';
 
 
@@ -42,7 +46,10 @@ export class StoreLocator {
   infowindow;
   map:google.maps.Map ;
 
-	constructor () {}
+	stores:FirebaseListObservable<any> ;
+	markers:Array<google.maps.Marker> =[];
+
+	constructor ( public appService:AppService) {}
 
   ngAfterViewInit() {
    this.loadMap();
@@ -59,7 +66,7 @@ export class StoreLocator {
     // create a new map by passing HTMLElement
     let element: HTMLElement = document.getElementById('map');
 
-    console.log(element);
+    //console.log(element);
 
     //let map = new GoogleMap(element);
 
@@ -67,56 +74,96 @@ export class StoreLocator {
 
    let mapOptions = {
      center: latLng,
-     zoom: 15,
+     zoom: 12,
      mapTypeId: google.maps.MapTypeId.ROADMAP
    }
 
-     this.map = new google.maps.Map(element, mapOptions);
-
-
-    let panelDiv = document.getElementById('panel');
+    this.map = new google.maps.Map(element, mapOptions);
 
     this.infowindow = new google.maps.InfoWindow();
-        let service = new google.maps.places.PlacesService(this.map);
-        let requestSearch : google.maps.places.PlaceSearchRequest = {};
-        requestSearch.location = latLng ;
-        requestSearch.radius = 800 ;
-        requestSearch.types= ['store'];
+      // let panelDiv = document.getElementById('panel');
+			//
+      //   this.infowindow = new google.maps.InfoWindow();
+      //   let service = new google.maps.places.PlacesService(this.map);
+      //   let requestSearch : google.maps.places.PlaceSearchRequest = {};
+      //   requestSearch.location = latLng ;
+      //   requestSearch.radius = 800 ;
+      //   requestSearch.types= ['store'];
+			//
+      //   //requestSearch.keyword ="3m";
+			//
+      //   service.nearbySearch(requestSearch, this.callback);
 
-        //requestSearch.keyword ="3m";
+     this.stores = this.appService.getStores();
 
-        service.nearbySearch(requestSearch, this.callback);
+		 this.stores.subscribe((stores)=> this.createMarkers(stores))
 
   }
-   self = this ;
-    public callback = (results, status) => {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-          for (var i = 0; i < results.length; i++) {
-            this.createMarker(results[i]);
-             console.log(results[i]);
-          }
-        }
+	createMarkers(results){
+		for (var i = 0; i < results.length; i++) {
+			this.createMarkerFromData(results[i]);
+			 //console.log(results[i]);
+		}
+	}
+  // self = this ;
+    // public callback = (results, status) => {
+    //     if (status === google.maps.places.PlacesServiceStatus.OK) {
+    //       for (var i = 0; i < results.length; i++) {
+    //         this.createMarker(results[i]);
+    //          console.log(results[i]);
+    //       }
+    //     }
+    //   }
+		//
+    //   createMarker(place) {
+    //     var placeLoc = place.geometry.location;
+    //     var marker = new google.maps.Marker({
+    //       map: this.map,
+    //       position: place.geometry.location
+	  //     });
+		//
+	  //     google.maps.event.addListener(marker, 'click', ()=> {
+	  //         this.infowindow.setContent(place.name);
+	  //         this.infowindow.open(this.map,marker);
+	  //       });
+		//
+	  //   }
 
 
-      }
-      createMarker(place) {
-        var placeLoc = place.geometry.location;
-        var marker = new google.maps.Marker({
+			createMarkerFromData(place) {
+        let placeLoc = {lat: place.coords.lant, lng: place.coords.lang};
+
+        let marker = new google.maps.Marker({
           map: this.map,
-          position: place.geometry.location
-      });
-      google.maps.event.addListener(marker, 'click', ()=> {
-          this.infowindow.setContent(place.name);
-          this.infowindow.open(this.map,marker);
-        });
+          position: placeLoc
+	      });
+				this.markers[place.$key]=marker ;
 
-    }
+	      google.maps.event.addListener(marker, 'click', ()=> {
+	          this.infowindow.setContent(place.title);
+	          this.infowindow.open(this.map,marker);
+	        });
 
+	    }
 
+			navigateTo(s){
+				//window.open("google.navigation:q=23.3728831,85.3372199&mode=d" , '_system');
 
+				let browser = new InAppBrowser(`google.navigation:q=${s.coords.lant},${s.coords.lang}&mode=d`, '_system');
+				browser.show();
+			}
 
+			showInMap(s){
 
+				let marker = this.markers[s.$key];
+				this.infowindow.setContent(s.title);
+				this.infowindow.open(this.map,marker);
 
+			}
+
+			callStore(s){
+
+			}
 
 
 }

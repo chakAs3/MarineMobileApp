@@ -78,6 +78,15 @@
 		7E49D27018FC48F9B676C033 /* CDVCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5527784933024250B6703EA2 /* CDVCompass.m */; };
 		41D457C2D1174687A63CDD58 /* CDVAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F441BA204A648B0AAF3D1AD /* CDVAccelerometer.m */; };
 		B03428A3F85E48E584A57D17 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0346F98A42A64E67B8AFAB0F /* CoreMotion.framework */; };
+		3462C953D263455BAC82A226 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B573BA79C1445A49A7826D4 /* CDVInAppBrowser.m */; };
+		28D281B8FD8F4CA1A3F46267 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB650E370DAA45BFBDB1AA39 /* libzbar.a */; };
+		BB6101D09604459DADD3FF65 /* CsZBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3B233899049CC82211990 /* CsZBar.m */; };
+		CB13ECD993C247BCA6C9A7A3 /* AlmaZBarReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E257768270474B9C839E60 /* AlmaZBarReaderViewController.m */; };
+		CA20E83F884F432EB6ED73A1 /* CsZBarScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3988DA557BA24229817AAAA6 /* CsZBarScanView.xib */; };
+		7CD640CB0F904A30A1C980F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B0C46F5C94314B63A4260 /* AVFoundation.framework */; };
+		60A22571F31E4C94B0C3CFCB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAB66D2094A4A02B986B2D1 /* CoreMedia.framework */; };
+		6C24BD91E39E4F31BF3CEC5E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C0263A3A80467CB2D187C2 /* CoreVideo.framework */; };
+		43ED76939FD146F5BE6E8035 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E4EFE42EA34C329759D046 /* libiconv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +222,38 @@
 		7F441BA204A648B0AAF3D1AD /* CDVAccelerometer.m */ = {isa = PBXFileReference; name = "CDVAccelerometer.m"; path = "cordova-plugin-device-motion/CDVAccelerometer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		1920FEA675A74D43BE3DA011 /* CDVAccelerometer.h */ = {isa = PBXFileReference; name = "CDVAccelerometer.h"; path = "cordova-plugin-device-motion/CDVAccelerometer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		0346F98A42A64E67B8AFAB0F /* CoreMotion.framework */ = {isa = PBXFileReference; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		9B573BA79C1445A49A7826D4 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3B8AEC6468784187A5F5A58F /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FB650E370DAA45BFBDB1AA39 /* libzbar.a */ = {isa = PBXFileReference; name = "libzbar.a"; path = "3M Marine/Plugins/cordova-plugin-cszbar/libzbar.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7DB3B233899049CC82211990 /* CsZBar.m */ = {isa = PBXFileReference; name = "CsZBar.m"; path = "cordova-plugin-cszbar/CsZBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A3E257768270474B9C839E60 /* AlmaZBarReaderViewController.m */ = {isa = PBXFileReference; name = "AlmaZBarReaderViewController.m"; path = "cordova-plugin-cszbar/AlmaZBarReaderViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		90B775D07024496F97E84CA1 /* CsZBar.h */ = {isa = PBXFileReference; name = "CsZBar.h"; path = "cordova-plugin-cszbar/CsZBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4806DAC731114CC7B6F7A865 /* AlmaZBarReaderViewController.h */ = {isa = PBXFileReference; name = "AlmaZBarReaderViewController.h"; path = "cordova-plugin-cszbar/AlmaZBarReaderViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		417AC6FAB1AA471680E9732E /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; name = "ZBarCameraSimulator.h"; path = "cordova-plugin-cszbar/ZBarCameraSimulator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		51B82DFDAA834815A774F1B8 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; name = "ZBarCaptureReader.h"; path = "cordova-plugin-cszbar/ZBarCaptureReader.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FFC0E33DBCFF4301AF2BF458 /* ZBarHelpController.h */ = {isa = PBXFileReference; name = "ZBarHelpController.h"; path = "cordova-plugin-cszbar/ZBarHelpController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D9BEF43C183F4756A2D4A9D4 /* ZBarImage.h */ = {isa = PBXFileReference; name = "ZBarImage.h"; path = "cordova-plugin-cszbar/ZBarImage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		94C03A7FE023440C95032985 /* ZBarImageScanner.h */ = {isa = PBXFileReference; name = "ZBarImageScanner.h"; path = "cordova-plugin-cszbar/ZBarImageScanner.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D7060C450066420295DBA992 /* ZBarReaderController.h */ = {isa = PBXFileReference; name = "ZBarReaderController.h"; path = "cordova-plugin-cszbar/ZBarReaderController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		496B0643545C4D1485257BD5 /* ZBarReaderView.h */ = {isa = PBXFileReference; name = "ZBarReaderView.h"; path = "cordova-plugin-cszbar/ZBarReaderView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		AC00EEB5006F472E86E9F6F6 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; name = "ZBarReaderViewController.h"; path = "cordova-plugin-cszbar/ZBarReaderViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		732F0D75EBB74B129EC6240A /* ZBarSDK.h */ = {isa = PBXFileReference; name = "ZBarSDK.h"; path = "cordova-plugin-cszbar/ZBarSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9000CDD5A8C14310B6D743A2 /* ZBarSymbol.h */ = {isa = PBXFileReference; name = "ZBarSymbol.h"; path = "cordova-plugin-cszbar/ZBarSymbol.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8C2E4677BD9E4EBC846A249A /* zbar.h */ = {isa = PBXFileReference; name = "zbar.h"; path = "cordova-plugin-cszbar/zbar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2F2D2B4C06024847A1956CB0 /* Decoder.h */ = {isa = PBXFileReference; name = "Decoder.h"; path = "cordova-plugin-cszbar/Decoder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8F2365EC797240B18FFB54D8 /* Exception.h */ = {isa = PBXFileReference; name = "Exception.h"; path = "cordova-plugin-cszbar/Exception.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2ACD8901ACFB4CF58AD8EEA7 /* Image.h */ = {isa = PBXFileReference; name = "Image.h"; path = "cordova-plugin-cszbar/Image.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		359FDE8718FE464E8AC33325 /* ImageScanner.h */ = {isa = PBXFileReference; name = "ImageScanner.h"; path = "cordova-plugin-cszbar/ImageScanner.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		56AE44FB778A4F96BC98C1ED /* Processor.h */ = {isa = PBXFileReference; name = "Processor.h"; path = "cordova-plugin-cszbar/Processor.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ED54FA4FCB164222A4CCA9B0 /* Scanner.h */ = {isa = PBXFileReference; name = "Scanner.h"; path = "cordova-plugin-cszbar/Scanner.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		69BAAC9664BD4CE193B1450D /* Symbol.h */ = {isa = PBXFileReference; name = "Symbol.h"; path = "cordova-plugin-cszbar/Symbol.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4AC58001910C454B8BD036E9 /* Video.h */ = {isa = PBXFileReference; name = "Video.h"; path = "cordova-plugin-cszbar/Video.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E4344B44D9A6481AAB15BF1E /* Window.h */ = {isa = PBXFileReference; name = "Window.h"; path = "cordova-plugin-cszbar/Window.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3988DA557BA24229817AAAA6 /* CsZBarScanView.xib */ = {isa = PBXFileReference; name = "CsZBarScanView.xib"; path = "CsZBarScanView.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
+		927B0C46F5C94314B63A4260 /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8BAB66D2094A4A02B986B2D1 /* CoreMedia.framework */ = {isa = PBXFileReference; name = "CoreMedia.framework"; path = "System/Library/Frameworks/CoreMedia.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		61C0263A3A80467CB2D187C2 /* CoreVideo.framework */ = {isa = PBXFileReference; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		47E4EFE42EA34C329759D046 /* libiconv.dylib */ = {isa = PBXFileReference; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +292,11 @@
 				9CD75A7AAAC34DC397F5F001 /* GoogleMaps.framework in Frameworks */,
 				02BCDF20091A4040A50742A2 /* GoogleMapsCore.framework in Frameworks */,
 				B03428A3F85E48E584A57D17 /* CoreMotion.framework in Frameworks */,
+				28D281B8FD8F4CA1A3F46267 /* libzbar.a in Frameworks */,
+				7CD640CB0F904A30A1C980F0 /* AVFoundation.framework in Frameworks */,
+				60A22571F31E4C94B0C3CFCB /* CoreMedia.framework in Frameworks */,
+				6C24BD91E39E4F31BF3CEC5E /* CoreVideo.framework in Frameworks */,
+				43ED76939FD146F5BE6E8035 /* libiconv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +360,7 @@
 				8D1107310486CEB800E47090 /* 3M Marine-Info.plist */,
 				8DBC68779AC9427A97A75F20 /* 3M Marine.entitlements */,
 				9513B3D4287F40CEB1FC282F /* GoogleMaps.bundle */,
+				3988DA557BA24229817AAAA6 /* CsZBarScanView.xib */,
 			);
 			name = Resources;
 			path = "3M Marine/Resources";
@@ -352,6 +399,11 @@
 				45C39373CC504DA1ABA8C7C6 /* GoogleMaps.framework */,
 				DCF7884C0E844AF8A00709B1 /* GoogleMapsCore.framework */,
 				0346F98A42A64E67B8AFAB0F /* CoreMotion.framework */,
+				FB650E370DAA45BFBDB1AA39 /* libzbar.a */,
+				927B0C46F5C94314B63A4260 /* AVFoundation.framework */,
+				8BAB66D2094A4A02B986B2D1 /* CoreMedia.framework */,
+				61C0263A3A80467CB2D187C2 /* CoreVideo.framework */,
+				47E4EFE42EA34C329759D046 /* libiconv.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -441,6 +493,32 @@
 				9008B09D587A4D25AC99618B /* CDVCompass.h */,
 				7F441BA204A648B0AAF3D1AD /* CDVAccelerometer.m */,
 				1920FEA675A74D43BE3DA011 /* CDVAccelerometer.h */,
+				9B573BA79C1445A49A7826D4 /* CDVInAppBrowser.m */,
+				3B8AEC6468784187A5F5A58F /* CDVInAppBrowser.h */,
+				7DB3B233899049CC82211990 /* CsZBar.m */,
+				A3E257768270474B9C839E60 /* AlmaZBarReaderViewController.m */,
+				90B775D07024496F97E84CA1 /* CsZBar.h */,
+				4806DAC731114CC7B6F7A865 /* AlmaZBarReaderViewController.h */,
+				417AC6FAB1AA471680E9732E /* ZBarCameraSimulator.h */,
+				51B82DFDAA834815A774F1B8 /* ZBarCaptureReader.h */,
+				FFC0E33DBCFF4301AF2BF458 /* ZBarHelpController.h */,
+				D9BEF43C183F4756A2D4A9D4 /* ZBarImage.h */,
+				94C03A7FE023440C95032985 /* ZBarImageScanner.h */,
+				D7060C450066420295DBA992 /* ZBarReaderController.h */,
+				496B0643545C4D1485257BD5 /* ZBarReaderView.h */,
+				AC00EEB5006F472E86E9F6F6 /* ZBarReaderViewController.h */,
+				732F0D75EBB74B129EC6240A /* ZBarSDK.h */,
+				9000CDD5A8C14310B6D743A2 /* ZBarSymbol.h */,
+				8C2E4677BD9E4EBC846A249A /* zbar.h */,
+				2F2D2B4C06024847A1956CB0 /* Decoder.h */,
+				8F2365EC797240B18FFB54D8 /* Exception.h */,
+				2ACD8901ACFB4CF58AD8EEA7 /* Image.h */,
+				359FDE8718FE464E8AC33325 /* ImageScanner.h */,
+				56AE44FB778A4F96BC98C1ED /* Processor.h */,
+				ED54FA4FCB164222A4CCA9B0 /* Scanner.h */,
+				69BAAC9664BD4CE193B1450D /* Symbol.h */,
+				4AC58001910C454B8BD036E9 /* Video.h */,
+				E4344B44D9A6481AAB15BF1E /* Window.h */,
 			);
 			name = Plugins;
 			path = "3M Marine/Plugins";
@@ -526,6 +604,7 @@
 				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
 				3C1AF1B71247426B9FBB456E /* 3M Marine.entitlements in Resources */,
 				B136AC6CF21B4924B9E29D8F /* GoogleMaps.bundle in Resources */,
+				CA20E83F884F432EB6ED73A1 /* CsZBarScanView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +667,9 @@
 				EC6E4B995FD4407691D3EAF7 /* CDVLocation.m in Sources */,
 				7E49D27018FC48F9B676C033 /* CDVCompass.m in Sources */,
 				41D457C2D1174687A63CDD58 /* CDVAccelerometer.m in Sources */,
+				3462C953D263455BAC82A226 /* CDVInAppBrowser.m in Sources */,
+				BB6101D09604459DADD3FF65 /* CsZBar.m in Sources */,
+				CB13ECD993C247BCA6C9A7A3 /* AlmaZBarReaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +720,10 @@
 					"\"3M Marine/Plugins/com.googlemaps.ios\"",
 				);
 				CODE_SIGN_ENTITLEMENTS = "3M Marine/Resources/3M Marine.entitlements";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3M Marine/Plugins/cordova-plugin-cszbar\"",
+				);
 			};
 			name = Debug;
 		};
@@ -674,6 +760,10 @@
 					"\"3M Marine/Plugins/com.googlemaps.ios\"",
 				);
 				CODE_SIGN_ENTITLEMENTS = "3M Marine/Resources/3M Marine.entitlements";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3M Marine/Plugins/cordova-plugin-cszbar\"",
+				);
 			};
 			name = Release;
 		};
@@ -718,6 +808,10 @@
 					"\"3M Marine/Plugins/com.googlemaps.ios\"",
 				);
 				CODE_SIGN_ENTITLEMENTS = "3M Marine/Resources/3M Marine.entitlements";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3M Marine/Plugins/cordova-plugin-cszbar\"",
+				);
 			};
 			name = Debug;
 		};
@@ -761,6 +855,10 @@
 					"\"3M Marine/Plugins/com.googlemaps.ios\"",
 				);
 				CODE_SIGN_ENTITLEMENTS = "3M Marine/Resources/3M Marine.entitlements";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/3M Marine/Plugins/cordova-plugin-cszbar\"",
+				);
 			};
 			name = Release;
 		};

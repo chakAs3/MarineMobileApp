@@ -19,12 +19,13 @@
     <ion-list-header>
       Product List
     </ion-list-header>
-    <ion-item ion-item *ngFor="let p of categories_products | async"   text-wrap>
+    <ion-item ion-item *ngFor="let p of products"   text-wrap>
       <ion-thumbnail item-left>
-        <img [src]='p.image'>
+        <img [src]='p.info["PRODUCT PHOTO"]'>
       </ion-thumbnail>
-      <p>{{p.name }}</p>
-      <button ion-button clear item-right>View</button>
+      <p>{{p.info["PRODUCT DESCRIPTION"] }}</p>
+      <p><strong>SKU:</strong>{{p.info["STOCK NUMBER"] }}</p>
+      <button ion-button clear item-right (click)="goProductDetail(p.info)" >View</button>
     </ion-item>
 
   </ion-list>

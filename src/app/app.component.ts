@@ -23,21 +23,21 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any,icon:string}>;
+  pages: Array<{title: string,note:string, component: any,icon:string}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Boat Care', component: ProductsPage, icon: "boat"},
-      { title: 'Help Request', component: HelpRequestPage, icon: "help-buoy" },
-      { title: 'Tips and Tricks', component: TipsPage, icon :"bulb" },
-      { title: 'Marine Utilities', component: UtilitiesTabsPage, icon :"compass" },
-      { title: 'Contest and Loyalty Points', component: ContestIntroPage, icon :"cash" },
-      { title: '3M Messenger', component: MessengerTabsPage, icon:"chatbubbles" },
-      { title: '3M Stores', component: StoreLocator, icon:"cart"  },
-      { title: 'My Profile', component: Login, icon:"contact"  }
+      { title: 'Boat Care', note:'find your 3m product', component: ProductsPage, icon: "boat"},
+      { title: 'Help Request',note:'Ask for help',  component: HelpRequestPage, icon: "help-buoy" },
+      { title: 'Tips and Tricks', note:'how to make it', component: TipsPage, icon :"bulb" },
+      { title: 'Marine Utilities', note:'Your navigation marine tool',  component: UtilitiesTabsPage, icon :"compass" },
+      { title: 'Contest and Loyalty Points', note:'Win with 3m',  component: ContestIntroPage, icon :"cash" },
+      { title: '3M Messenger',note:'Get in touch',  component: MessengerTabsPage, icon:"chatbubbles" },
+      { title: '3M Stores', note:'Find your nerest 3m store',  component: StoreLocator, icon:"cart"  },
+      { title: 'My Profile', note:'Your account details', component: Login, icon:"contact"  }
     ];
 
   }

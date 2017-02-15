@@ -7,17 +7,17 @@
       Boat Care Products
     </ion-title>
   </ion-navbar>
-   
+
 </ion-header>
 
-<ion-content padding>
+<ion-content >
 
   <ion-list>
     <ion-list-header>
       Main categories
     </ion-list-header>
     <ion-item ion-item *ngFor="let p of products | async" (click)='openSubCategories(p)' >
-      <ion-thumbnail item-left>
+      <ion-thumbnail class='fit-thumbnail' item-left>
         <img [src]='p.image'>
       </ion-thumbnail>
       <h2>{{p.name }}</h2>
