@@ -1,3 +1,21 @@
 page-home {
+  p {
+    width: 80%;
+  }
+  h1 {
+    padding-top: 20px;
+  }
+  ion-content img{
+    margin-left: 40%;
+  }
+  .big-text{
+    font-size: 32px;
+    color: red;
+    position: absolute;
+    bottom: 120px;
+  }
+  ion-content .scroll-content {
+        overflow-y: hidden;
+  }
 
 }

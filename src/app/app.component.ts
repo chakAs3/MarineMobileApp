@@ -30,13 +30,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Boat Care', note:'find your 3m product', component: ProductsPage, icon: "boat"},
+      { title: 'Boat Care Products', note:'Find your 3m product', component: ProductsPage, icon: "boat"},
       { title: 'Help Request',note:'Ask for help',  component: HelpRequestPage, icon: "help-buoy" },
-      { title: 'Tips and Tricks', note:'how to make it', component: TipsPage, icon :"bulb" },
+      { title: 'Tips and Tricks', note:'We have some secrets to share', component: TipsPage, icon :"bulb" },
       { title: 'Marine Utilities', note:'Your navigation marine tool',  component: UtilitiesTabsPage, icon :"compass" },
-      { title: 'Contest and Loyalty Points', note:'Win with 3m',  component: ContestIntroPage, icon :"cash" },
-      { title: '3M Messenger',note:'Get in touch',  component: MessengerTabsPage, icon:"chatbubbles" },
-      { title: '3M Stores', note:'Find your nerest 3m store',  component: StoreLocator, icon:"cart"  },
+      { title: 'Contests', note:'Win exciting prices',  component: ContestIntroPage, icon :"cash" },
+      { title: '3M Messenger',note:'Get in touch with new friends',  component: MessengerTabsPage, icon:"chatbubbles" },
+      { title: '3M Stores', note:'Find your nerest 3M store',  component: StoreLocator, icon:"cart"  },
       { title: 'My Profile', note:'Your account details', component: Login, icon:"contact"  }
     ];
 

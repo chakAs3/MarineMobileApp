@@ -4,23 +4,41 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
+    <ion-buttons end>
+     <img src="./assets/imgs/3mm-logo.png" />
+    </ion-buttons>
+    <!-- <div end><img src="./assets/imgs/3mm-logo.png" /> </div> -->
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>3M Marine Home</h3>
+  <h1>WELCOME TO<br>
+A WHOLE NEW
+EXPERIENCE!
+
+</h1>
 
   <p>
-    Welcome to your marine application to get connected with your boat and the marine community .
+    3M is a trusted leader in boat
+    repair and care, serving everyone
+    from boat builders to boat owners.
   </p>
-  <img src="assets/imgs/150.jpg"/>
-  <button ion-button secondary center (click)='gotoContestPage()'>3M Challenge</button>
-  <button ion-button secondary menuToggle>Explore 3M Marine</button>
+  <button ion-button color="secondary" small center (click)='gotoContestPage()' icon-right>WELCOME ABOARD! <ion-icon name="star"></ion-icon></button>
+  <img src="assets/imgs/hand-phone.png"/>
+  <div class="big-text">
+    WIN A <br>
+    JET SKI!
+  </div>
+
+  <!-- <button ion-button color="secondary" menuToggle>Explore 3M Marine</button> -->
 </ion-content>
 
-<ion-footer>
+<!-- <ion-footer>
   <ion-toolbar>
-    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
-
+    <img id="3mlogo" height="26" src="assets/imgs/3m-logo.png">
+    <ion-buttons end>
+      <img height="30" src="assets/3mlogo.png">
+    </ion-buttons>
   </ion-toolbar>
-</ion-footer>
+</ion-footer> -->
+<page-footer></page-footer>

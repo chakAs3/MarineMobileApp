@@ -161,6 +161,14 @@ module.exports = [
         "clobbers": [
             "cloudSky.zBar"
         ]
+    },
+    {
+        "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
+        "id": "mx.ferreyra.callnumber.CallNumber",
+        "pluginId": "mx.ferreyra.callnumber",
+        "clobbers": [
+            "call"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -181,7 +189,8 @@ module.exports.metadata =
     "cordova-plugin-device-orientation": "1.0.5",
     "cordova-plugin-device-motion": "1.2.3",
     "cordova-plugin-inappbrowser": "1.6.1",
-    "cordova-plugin-cszbar": "1.3.1"
+    "cordova-plugin-cszbar": "1.3.1",
+    "mx.ferreyra.callnumber": "0.0.2"
 }
 // BOTTOM OF METADATA
 });

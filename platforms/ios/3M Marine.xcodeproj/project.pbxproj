@@ -87,6 +87,7 @@
 		60A22571F31E4C94B0C3CFCB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAB66D2094A4A02B986B2D1 /* CoreMedia.framework */; };
 		6C24BD91E39E4F31BF3CEC5E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C0263A3A80467CB2D187C2 /* CoreVideo.framework */; };
 		43ED76939FD146F5BE6E8035 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E4EFE42EA34C329759D046 /* libiconv.dylib */; };
+		DAC8779D34F54273909ECAEC /* CFCallNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F68B8664DAC433DAA7BC25F /* CFCallNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,6 +255,8 @@
 		8BAB66D2094A4A02B986B2D1 /* CoreMedia.framework */ = {isa = PBXFileReference; name = "CoreMedia.framework"; path = "System/Library/Frameworks/CoreMedia.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		61C0263A3A80467CB2D187C2 /* CoreVideo.framework */ = {isa = PBXFileReference; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		47E4EFE42EA34C329759D046 /* libiconv.dylib */ = {isa = PBXFileReference; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		7F68B8664DAC433DAA7BC25F /* CFCallNumber.m */ = {isa = PBXFileReference; name = "CFCallNumber.m"; path = "mx.ferreyra.callnumber/CFCallNumber.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E60A8817E8F7459B86AE6C86 /* CFCallNumber.h */ = {isa = PBXFileReference; name = "CFCallNumber.h"; path = "mx.ferreyra.callnumber/CFCallNumber.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -519,6 +522,8 @@
 				69BAAC9664BD4CE193B1450D /* Symbol.h */,
 				4AC58001910C454B8BD036E9 /* Video.h */,
 				E4344B44D9A6481AAB15BF1E /* Window.h */,
+				7F68B8664DAC433DAA7BC25F /* CFCallNumber.m */,
+				E60A8817E8F7459B86AE6C86 /* CFCallNumber.h */,
 			);
 			name = Plugins;
 			path = "3M Marine/Plugins";
@@ -670,6 +675,7 @@
 				3462C953D263455BAC82A226 /* CDVInAppBrowser.m in Sources */,
 				BB6101D09604459DADD3FF65 /* CsZBar.m in Sources */,
 				CB13ECD993C247BCA6C9A7A3 /* AlmaZBarReaderViewController.m in Sources */,
+				DAC8779D34F54273909ECAEC /* CFCallNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,27 @@
 page-tips {
 
-  ion-card-title {
+  .card-title {
     font-size: 13px;
+    display: block;
+    margin: 0px 0 2px;
+    padding: 15px 18px 8px 8px;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #fff !important;
+    background: #E74857;
   }
+  .card-content {
+    padding: 0px 0px 0px 0px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    }
+    .card p {
+    margin: 20px 20px 10px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #222;
+    }
+
 
 }

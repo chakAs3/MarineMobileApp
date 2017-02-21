@@ -83,6 +83,10 @@
                         {
                             "xml": "<feature name=\"CsZBar\"><param name=\"android-package\" value=\"org.cloudsky.cordovaPlugins.ZBar\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CallNumber\"><param name=\"android-package\" value=\"mx.ferreyra.callnumber.CFCallNumber\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -164,6 +168,14 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CALL_PHONE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -239,6 +251,9 @@
             "PACKAGE_NAME": "com.trix.Mmarine381299"
         },
         "cordova-plugin-cszbar": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "mx.ferreyra.callnumber": {
             "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     },
@@ -363,6 +378,14 @@
             "clobbers": [
                 "cloudSky.zBar"
             ]
+        },
+        {
+            "id": "mx.ferreyra.callnumber.CallNumber",
+            "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
+            "pluginId": "mx.ferreyra.callnumber",
+            "clobbers": [
+                "call"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -379,6 +402,7 @@
         "cordova-plugin-device-orientation": "1.0.5",
         "cordova-plugin-device-motion": "1.2.3",
         "cordova-plugin-inappbrowser": "1.6.1",
-        "cordova-plugin-cszbar": "1.3.1"
+        "cordova-plugin-cszbar": "1.3.1",
+        "mx.ferreyra.callnumber": "0.0.2"
     }
 }

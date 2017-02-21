@@ -12,6 +12,7 @@ import 'rxjs/add/operator/switchMap';
 
 
 import { WeatherService } from './weather.service';
+import { Storage } from '@ionic/storage'
 
 
 Ng2MapComponent['apiUrl'] =
@@ -20,7 +21,7 @@ Ng2MapComponent['apiUrl'] =
 @Component({
 	selector: 'gs-weather',
 	templateUrl: 'weather.component.html',
-	styles:["img { } "],
+	styles:["button { } "],
 	providers: [ WeatherService],
 })
 
@@ -41,7 +42,13 @@ export class WeatherComponent {
 
 	 private searchTermStream = new Subject<string>();
 
-	constructor (private weatherService: WeatherService) {}
+	constructor (private weatherService: WeatherService,public local:Storage) {
+    this.local.get("cities")
+    .then(data => { this.cities = (data || this.cities ); this.search(this.cities[0].name);})
+    .catch(err => console.log(err) );
+
+
+  }
 
 	//search(term: string) {this.isVisible = false;  this.searchTermStream.next(term); }
 
@@ -67,9 +74,11 @@ export class WeatherComponent {
 	  	if (index > -1) {
 		   this.cities.splice(index, 1);
 	  	}
+      this.local.set("cities",this.cities);
    }
 	 addChipCity(name){
       this.cities.push({name:name,id:name+"id"}) ;
+      this.local.set("cities",this.cities);
 	 }
 
 	 initialized(autocomplete: any) {

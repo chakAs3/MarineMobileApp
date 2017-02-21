@@ -25,13 +25,18 @@ import { Chats_Page } from '../pages/chats/chats';
 //import { AccountPage } from '../pages/account/account';
 import { ChatViewPage } from '../pages/chat-view/chat-view';
 
+import { Footer } from '../pages/footer/footer';
+
 import { AuthProvider } from '../providers/auth-provider/auth-provider';
 import { ChatsProvider } from '../providers/chats-provider/chats-provider';
 import { UserProvider } from '../providers/user-provider/user-provider';
 import { UtilProvider } from '../providers/utils';
 
 import { AppService } from './app.service';
+import { AppNavService } from './appNav.service';
 import { Ng2MapModule} from 'ng2-map';
+
+
 
 
 import {
@@ -70,7 +75,8 @@ const firebaseConfig = {
     UtilitiesTabsPage,
     CompassPage,
     NautChartPage,
-    ProductDetailsPage
+    ProductDetailsPage,
+    Footer
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -102,8 +108,9 @@ const firebaseConfig = {
     UtilitiesTabsPage,
     CompassPage,
     NautChartPage,
-    ProductDetailsPage
+    ProductDetailsPage,
+    Footer
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},AppService,AuthProvider, ChatsProvider, UserProvider, UtilProvider, Storage]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},AppService,AppNavService,AuthProvider, ChatsProvider, UserProvider, UtilProvider, Storage]
 })
 export class AppModule {}

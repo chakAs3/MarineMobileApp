@@ -6,6 +6,9 @@
     <ion-title>
       Boat Care Products
     </ion-title>
+    <ion-buttons end>
+     <div (click)="goHomePage()" ><img src="./assets/imgs/3mm-logo.png" /></div>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -14,14 +17,14 @@
 
   <ion-list>
     <ion-list-header>
-      Main categories
+      Main <br> categories
     </ion-list-header>
     <ion-item ion-item *ngFor="let p of products | async" (click)='openSubCategories(p)' >
       <ion-thumbnail class='fit-thumbnail' item-left>
         <img [src]='p.image'>
       </ion-thumbnail>
       <h2>{{p.name }}</h2>
-      <p>3M Main Category</p>
+      <!-- <p>3M Main Category</p> -->
       <!--<button ion-button clear item-right>View</button>-->
     </ion-item>
 
@@ -29,9 +32,10 @@
 
 </ion-content>
 
-<ion-footer>
+<!-- <ion-footer>
   <ion-toolbar>
     <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
 
   </ion-toolbar>
-</ion-footer>
+</ion-footer> -->
+<page-footer></page-footer>

@@ -21,19 +21,63 @@ $toolbar-text-color: #ff0000;
 $toolbar-active-color: #123456;
 $toolbar-inactive-color: #123456;
 
-$toolbar-md-title-text-color : #ffc1c2;
+$toolbar-md-title-text-color : #ffffff;
 
-$icon-color : #ff0000;
+
+
+$background-image : url(./assets/images/bg.jpg);
 
 ion-icon{
-  color:#121897;
+  // color:#121897;
 }
 ion-toolbar ion-title h5{
   font-size: 14px;
 }
+ion-header {
+  background-image: url(../assets/imgs/header-bg.jpg);
+}
+ion-navbar img{
+  height: 40px;
+}
+ion-header .toolbar-background {
+    border-color: #123456;
+    background-image: url(../assets/imgs/header-bg.png);
+}
+ion-footer img#3mlogo{
+  height: 80%;
+}
+ion-content {
+  background-image: url(../assets/imgs/bg.jpg);
+  background-size: cover;
+}
+.card {
+  background: rgba(255,255,255,0.7);
+}
 
+.menu{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bdccd4+0,ffffff+100 */
+background: #bdccd4; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #bdccd4 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #bdccd4 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #bdccd4 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdccd4', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.menu button{
+  background: none;
+  color: #192758;
+}
+.menu .item-note{
+  color: #222222;
+}
 .item-note{
   font-size: 10px
+}
+.list .item {
+  background: none;
+}
+.list .item .item-inner {
+  border-bottom: 1px solid #BDCCD4;
 }
 
 

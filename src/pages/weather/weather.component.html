@@ -9,7 +9,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
 
   <ion-item class="input input-md">
     <ion-icon name="pin" item-left></ion-icon>
@@ -23,12 +23,14 @@
 
     <button ion-button small (click)='search(box.value);addChipCity(box.value)' item-right>add</button>
   </ion-item>
+  <div style="margin:2px 8px">
   <ion-chip *ngFor="let ship of cities" >
-  <ion-label (click)='search(ship.name);' >{{ship.name}}</ion-label>
+    <ion-label (click)='search(ship.name);' >{{ship.name}}</ion-label>
     <button ion-button clear color="light" (click)="delete(ship)">
       <ion-icon name="close-circle"></ion-icon>
     </button>
   </ion-chip>
+</div>
 
 
   <ion-card *ngIf='data'>
@@ -73,11 +75,3 @@
 
 
 </ion-content>
-
-
-<ion-footer>
-  <ion-toolbar>
-    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
-
-  </ion-toolbar>
-</ion-footer>

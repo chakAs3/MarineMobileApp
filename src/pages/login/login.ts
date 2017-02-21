@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 import  firebase  from 'firebase';
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
+import { AngularFire, AuthProviders, AuthMethods , FirebaseObjectObservable } from 'angularfire2';
 import { Storage } from '@ionic/storage';
 
 import { MessengerTabsPage } from '../tabs/tabs';
@@ -23,10 +23,11 @@ import { Facebook } from 'ionic-native';
   styles :["login.scss"]
 })
 export class Login {
-   user = {}     ;
+   user : any = {city:"Dubai",mobile:"+981998899999"}     ;
    isAuth = false;
    authColor = "";
    loginForm:any ;
+   userDetails : {mobile:FirebaseObjectObservable<any>,city?:FirebaseObjectObservable<any>};
   constructor(public navCtrl: NavController,public af: AngularFire,public auth: AuthProvider,
   public userProvider: UserProvider,
   public util: UtilProvider,
@@ -82,13 +83,13 @@ export class Login {
       firebase.auth().signInWithCredential(facebookCredential)
       .then((success) => {
         this.facebookCredentialText = success
-        console.log("Firebase success: " + JSON.stringify(success));
+      //  console.log("Firebase success: " + JSON.stringify(success));
         this.message = success;
       })
       .catch((error) => {
         this.facebookCredentialText = error
-        console.log("Firebase failure: " + JSON.stringify(error));
-        this.message = "Firebase failure: " + JSON.stringify(error);
+        //console.log("Firebase failure: " + JSON.stringify(error));
+        //this.message = "Firebase failure: " + JSON.stringify(error);
       });
 
     } );
@@ -97,7 +98,7 @@ export class Login {
   signInWithGoogle(){
     this.facebookCredentialText = this.auth.signInWithGoogle()
     this.auth.signInWithGoogle().then(res =>  {
-      this.message = " there is callback promise ";
+      this.message = "There is callback promise ";
       this.facebookCredentialText = res
     }  , err => this.facebookCredentialText = err);
   }
@@ -108,7 +109,7 @@ export class Login {
       this.af.auth.login(this.loginForm.value )
       .then((data) => {
           this.storage.set('uid', data.uid);
-          this.navCtrl.push(MessengerTabsPage);
+        //  this.navCtrl.push(MessengerTabsPage);
       }, (error) => {
           let alert = this.util.doAlert("Error",error.message,"Authentication Problem");
           alert.present();
@@ -125,7 +126,13 @@ export class Login {
             let alert = this.util.doAlert("Error",error.message,"Can not create user !!");
             alert.present();
         });
-    };
+    }
+
+  saveInfo(mobile,city){
+      console.log( `${mobile}  ${city}` );
+      let details = {mobile:mobile,city:city};
+      this.userProvider.updateUser(details);
+  }
 
 
   logout() {
@@ -133,10 +140,13 @@ export class Login {
   }
 
   private _changeState(user: any = null) {
+    //console.log(user);
     if(user) {
       this.isAuth = true;
       this.authColor = 'primary';
-      this.user = this._getUserInfo(user)
+      this.user = this._getUserInfo(user) ;
+      //this.userDetails = { mobile:this.af.database.object("users/"+user.auth.uid+"/mobile")} ;
+    //  this.userDetails.mobile.subscribe(data=>console.log(data));
     }
     else {
       this.isAuth = false;
@@ -153,10 +163,11 @@ export class Login {
     console.trace( user.auth.uid );
     return {
       uid : user.auth.uid,
-      name: data.displayName,
+      name: data.displayName  ,
       avatar: data.photoURL,
       email: data.email,
-      provider: data.providerId
+      provider: data.providerId,
+      details : this.af.database.object("users/"+user.auth.uid)
     };
   }
 

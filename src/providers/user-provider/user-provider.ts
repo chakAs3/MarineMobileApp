@@ -30,6 +30,12 @@ export class UserProvider {
     });
   }
 
+  updateUser(details){
+    this.getUid().then(uid => {
+      this.af.database.object(`/users/${uid}`).update({ city:details.city , mobile:details.mobile});
+    });
+  }
+
 
   // Get All Users of App
   getAllUsers() {

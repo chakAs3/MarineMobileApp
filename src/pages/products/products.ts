@@ -7,6 +7,7 @@ import { AngularFire, AuthProviders,FirebaseListObservable } from 'angularfire2'
 import {Login} from '../login/login';
 import {CategoriesPage} from '../products/categories';
 import { AppService } from '../../app/app.service';
+import { AppNavService } from '../../app/appNav.service';
 
 @Component({
   selector: 'page-products',
@@ -14,12 +15,11 @@ import { AppService } from '../../app/app.service';
 })
 export class ProductsPage {
   public products: FirebaseListObservable<any>;
-  constructor(public navCtrl: NavController,public af: AngularFire ,public appService:AppService) {
+  constructor(public navCtrl: NavController,public af: AngularFire ,public appService:AppService , public appNav:AppNavService) {
     this.af.auth.subscribe(
       user => console.trace(user+" There is a user   "),
       error => console.trace(error)
     );
-
     // add categories to firebase database ;
     //appService.addProductCategorys();
     this.products = appService.products;
@@ -38,6 +38,9 @@ export class ProductsPage {
     console.log(p);
   }
 
-}
+  goHomePage(){
+    console.log("goHomePage "+this.appNav.getPage("home"));
+    this.navCtrl.setRoot(this.appNav.getPage("home"));
+  }
 
- 
+}

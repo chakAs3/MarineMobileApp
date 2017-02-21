@@ -61,8 +61,8 @@ export class CategoriesPage {
   }
   openSubCategories(p){
     //this.navCtrl.push();
-    this.navCtrl.push(CategoryProductsPage,{id:this.id,category:p.$key,name:p.name});
-    console.log(p);
+    this.navCtrl.push(CategoryProductsPage,{id:this.id,category:p.$key,name:p.info.name});
+    //console.log(" NAME: "+p.info.name);
   }
 
 }

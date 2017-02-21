@@ -55,6 +55,9 @@
         },
         "cordova-plugin-cszbar": {
             "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "mx.ferreyra.callnumber": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     },
     "dependent_plugins": {

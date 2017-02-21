@@ -1,13 +1,13 @@
 import {Injectable} from "@angular/core";
 import { Observable } from 'rxjs/Rx';
 import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable, FirebaseObjectObservable} from 'angularfire2';
-
+import { UserProvider } from '../providers/user-provider/user-provider'
 @Injectable()
 export class AppService {
   public products: FirebaseListObservable<any>;
 
   public categories :   any;
-  constructor(public af: AngularFire) {
+  constructor(public af: AngularFire,public userProvider: UserProvider) {
     this.products = this.af.database.list('portfolios',{
       query: {
         orderByChild: 'order',
@@ -63,12 +63,13 @@ export class AppService {
      return this.af.database.list('families/'+category+'/products/');
    }
 
-   getMyListProducts(){
-     return this.af.database.list('mylistproducts/');
+   getMyListProducts(uid){
+      return this.af.database.list('mylistproducts/'+uid) ;
    }
    addtoMyList(key){
-     console.log( `mylistproducts/${key}` );
-     this.af.database.object(`mylistproducts/${key}`).set(true);
+     //console.log( `mylistproducts/${userId}/${key}` );
+     this.userProvider.getUid().then(userID => this.af.database.object(`mylistproducts/${userID}/${key}`).set(true) );
+
    }
    getStores(){
      return this.af.database.list('stores/');

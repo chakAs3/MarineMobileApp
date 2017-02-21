@@ -48,6 +48,9 @@
     <feature name="CsZBar">
         <param name="android-package" value="org.cloudsky.cordovaPlugins.ZBar" />
     </feature>
+    <feature name="CallNumber">
+        <param name="android-package" value="mx.ferreyra.callnumber.CFCallNumber" />
+    </feature>
     <name>3M Marine</name>
     <description>First Marine App.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Trix Team(chakir qatab)</author>

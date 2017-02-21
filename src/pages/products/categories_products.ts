@@ -7,6 +7,7 @@ import { AngularFire, AuthProviders,FirebaseListObservable } from 'angularfire2'
 import {Login} from '../login/login';
 import { ProductDetailsPage } from '../products/product_details';
 import { AppService } from '../../app/app.service';
+import { UserProvider} from '../../providers/user-provider/user-provider';
 
 @Component({
   selector: 'page-categories_products',
@@ -17,7 +18,7 @@ export class CategoryProductsPage {
   public products: FirebaseListObservable<any>;
   public item :String ;
   public mainCategoryName:String ;
-  constructor(public navCtrl: NavController,private navParams: NavParams,public af: AngularFire ,public appService:AppService) {
+  constructor(public navCtrl: NavController,private navParams: NavParams,public af: AngularFire ,public appService:AppService ,public userProvider:UserProvider) {
     this.af.auth.subscribe(
       user => console.trace(user+" There is a user   "),
       error => console.trace(error)
@@ -29,16 +30,32 @@ export class CategoryProductsPage {
 
     this.mainCategoryName = name;
 
-    if(category)
-    this.categories_products = appService.getCategoriesProducts(id,category);
-    else // show favorite list
-    this.categories_products = appService.getMyListProducts();
+    console.log(`${this.mainCategoryName}  ${category}  `);
 
-    this.categories_products.subscribe( products => this.products = products.map( product => {
+    let mappingFun =  (products) => this.products = products.map( product => {
       product.info = {name:"-"+product.$key,image:" "} ;
        this.af.database.object(`/products/${product.$key}`).subscribe(data => product.info = data);
       return product ;
-     } ));
+    } );
+
+    if( category ){
+    this.categories_products = appService.getCategoriesProducts(id,category);
+    this.categories_products.subscribe( mappingFun );
+    }else // show favorite list
+    this.userProvider.getUid().then( uid => {
+        this.categories_products = appService.getMyListProducts(uid);
+        this.categories_products.subscribe(mappingFun)
+      }
+
+    );
+
+    // this.categories_products.subscribe( products => this.products = products.map( product => {
+    //   product.info = {name:"-"+product.$key,image:" "} ;
+    //    this.af.database.object(`/products/${product.$key}`).subscribe(data => product.info = data);
+    //   return product ;
+    //  } ));
+
+
 
   }
 

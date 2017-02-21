@@ -3,9 +3,11 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>
-      HELP REQUEST
-    </ion-title>
+    <ion-title>HELP REQUEST</ion-title>
+    <ion-buttons end>
+     <div (click)="goHomePage()" ><img src="./assets/imgs/3mm-logo.png" /></div>
+    </ion-buttons>
+    <!-- <div end><img src="./assets/imgs/3mm-logo.png" /> </div> -->
   </ion-navbar>
 </ion-header>
 
@@ -13,29 +15,29 @@
 
   <ion-list>
     <ion-list-header>
-      Public
+      PUBLIC
     </ion-list-header>
-    <ion-item>Dubai Police<button ion-button round> <ion-icon name="call"></ion-icon> 999 </button></ion-item>
-    <ion-item>Fire Department <button ion-button round> <ion-icon name="call"></ion-icon> 997 </button></ion-item>
-    <ion-item>Ambulance <button ion-button solid> <ion-icon name="call"></ion-icon> 999 </button></ion-item>
-    <ion-item>Electricity <button ion-button solid> <ion-icon name="call"></ion-icon> 991 </button></ion-item>
-    <ion-item>Water	<button ion-button solid> <ion-icon name="call"></ion-icon> 991 </button></ion-item>
+    <ion-item><img src="./assets/svg/police.svg"  width="20" />Dubai Police<button ion-button (click)='callPhoneNumber("999")' outline item-right> <ion-icon name="call"></ion-icon> 999 </button></ion-item>
+    <ion-item><img src="./assets/svg/fire.svg"  width="20" />Fire Department <button ion-button (click)='callPhoneNumber("997")' outline item-right> <ion-icon name="call"></ion-icon> 997 </button></ion-item>
+    <ion-item><img src="./assets/svg/ambulance.svg"  width="20" />Ambulance <button ion-button (click)='callPhoneNumber("999")' outline item-right> <ion-icon name="call"></ion-icon> 999 </button></ion-item>
+    <ion-item><img src="./assets/svg/dewa.svg"  width="20" />DEWA <button ion-button (click)='callPhoneNumber("991")' outline item-right> <ion-icon name="call"></ion-icon> 991 </button></ion-item>
+
   </ion-list>
   <ion-list>
     <ion-list-header>
-      Private
+      PRIVATE
     </ion-list-header>
-    <ion-item> Allianze Marine<button ion-button solid> <ion-icon name="call"></ion-icon>  +971-4-3584388 </button></ion-item>
-    <ion-item>The Empire Strikes Back</ion-item>
-    <ion-item>Blade Runner</ion-item>
+    <ion-item><img src="./assets/svg/3m.svg"  width="24" />Marine Gulf<button ion-button (click)='callPhoneNumber("+971-4-3584388")' outline item-right> <ion-icon name="call"></ion-icon>  +971-4-3584388 </button></ion-item>
+
   </ion-list>
 
 </ion-content>
 
 
-<ion-footer>
-  <ion-toolbar>
+<!-- <ion-footer>
+  <ion-toolbar  >
     <ion-title > .<img height="30" src="assets/3mlogo.png"></ion-title>
 
   </ion-toolbar>
-</ion-footer>
+</ion-footer> -->
+<page-footer></page-footer>

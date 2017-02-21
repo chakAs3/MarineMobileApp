@@ -4,5 +4,10 @@ page-products {
     background-color: #ae007b;
   }
   .fit-thumbnail { object-fit: cover; }
+  ion-list-header ion-label {
+    text-transform: uppercase;
+    font-size: 24px;
+    color :color($colors,primary);
+  }
 
 }
