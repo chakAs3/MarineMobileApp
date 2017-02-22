@@ -169,6 +169,23 @@ module.exports = [
         "clobbers": [
             "call"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-email/www/email_composer.js",
+        "id": "cordova-plugin-email.EmailComposer",
+        "pluginId": "cordova-plugin-email",
+        "clobbers": [
+            "cordova.plugins.email",
+            "plugin.email"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "pluginId": "cordova-plugin-x-socialsharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -190,7 +207,9 @@ module.exports.metadata =
     "cordova-plugin-device-motion": "1.2.3",
     "cordova-plugin-inappbrowser": "1.6.1",
     "cordova-plugin-cszbar": "1.3.1",
-    "mx.ferreyra.callnumber": "0.0.2"
+    "mx.ferreyra.callnumber": "0.0.2",
+    "cordova-plugin-email": "1.2.6",
+    "cordova-plugin-x-socialsharing": "5.1.6"
 }
 // BOTTOM OF METADATA
 });

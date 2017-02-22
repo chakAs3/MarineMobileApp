@@ -1,4 +1,5 @@
-<ion-header>
+<page-header title="Boat Care Products" subtitle='{{mainCategoryName}}'></page-header>
+<ion-header style="z-index: 0 !important;">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -12,7 +13,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
+
+  <ion-fab top right>
+   <button color="secondary" ion-button small (click)="goToMylist()"><ion-icon name="cart"></ion-icon>My list</button>
+  </ion-fab>
 
   <ion-list>
     <ion-list-header>
@@ -20,9 +25,9 @@
       Categories
     </ion-list-header>
     <ion-item ion-item *ngFor="let p of families " (click)='openSubCategories(p)'  text-wrap>
-      <ion-avatar item-left>
+      <ion-thumbnail item-left>
         <img [src]='(p.info.image && p.info.image.length>10)?p.info.image : "http://boatpaintguide.com/wp-content/uploads/3M-Marine-Supplies.jpg"'>
-      </ion-avatar>
+      </ion-thumbnail>
       <h2>{{p.info.name }}</h2>
 
       <!-- <button ion-button clear item-right (click)='openSubCategories(p)'>View</button> -->
@@ -32,10 +37,10 @@
 
 </ion-content>
 
-<!-- <ion-footer>
+<ion-footer>
   <ion-toolbar>
     <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
 
   </ion-toolbar>
-</ion-footer> -->
+</ion-footer>
 <page-footer></page-footer>

@@ -1,4 +1,5 @@
-<ion-header>
+<page-header title='Boat Care Products' subtitle='{{mainCategoryName}}' ></page-header>
+<ion-header style="z-index:0 !important">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -13,7 +14,9 @@
 </ion-header>
 
 <ion-content >
-
+  <ion-fab *ngIf='mainCategoryName!="My Favorite List"'  top right>
+   <button color="secondary" ion-button small (click)="goToMylist()"><ion-icon name="cart"></ion-icon>My list</button>
+  </ion-fab>
   <ion-list>
 
     <ion-list-header>
@@ -25,18 +28,27 @@
       </ion-thumbnail>
       <p>{{p.info["PRODUCT DESCRIPTION"] }}</p>
       <p><strong>SKU:</strong>{{p.info["STOCK NUMBER"] }}</p>
-      <button ion-button clear item-right (click)="goProductDetail(p.info)" >View</button>
+      <button ion-button clear item-right *ngIf='mainCategoryName!="My Favorite List"' (click)="goProductDetail(p.info)" >View</button>
+      <button ion-button icon-left clear small *ngIf='mainCategoryName=="My Favorite List"' (click)="goProductDetail(p.info)" left>
+        <ion-icon name="eye"></ion-icon>
+        <div>View</div>
+      </button>
+      <button ion-button icon-left clear small *ngIf='mainCategoryName=="My Favorite List"' (click)='removeFromList(p)' left>
+        <ion-icon name="trash"></ion-icon>
+        <div>Remove</div>
+      </button>
     </ion-item>
 
   </ion-list>
+  <ion-item><button ion-button small (click)="contactForlist()">Contact us for this list</button></ion-item>
 
 </ion-content>
 
 
- <!-- <ion-footer>
+ <ion-footer>
   <ion-toolbar>
     <ion-title item-right> <img height="30" src="assets/3mlogo.png"></ion-title>
 
   </ion-toolbar>
-</ion-footer> -->
+</ion-footer>
 <page-footer></page-footer>

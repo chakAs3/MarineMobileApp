@@ -88,6 +88,12 @@
 		6C24BD91E39E4F31BF3CEC5E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C0263A3A80467CB2D187C2 /* CoreVideo.framework */; };
 		43ED76939FD146F5BE6E8035 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E4EFE42EA34C329759D046 /* libiconv.dylib */; };
 		DAC8779D34F54273909ECAEC /* CFCallNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F68B8664DAC433DAA7BC25F /* CFCallNumber.m */; };
+		FD16A54AFF33473A91E61888 /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8EF047D4481A9E5104F8 /* APPEmailComposer.m */; };
+		1B5962E9B43847719809B2E0 /* APPEmailComposerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E3D44020FE499BBFE8E380 /* APPEmailComposerImpl.m */; };
+		6008645CA30E4467A0AD62B6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E24EC4B7154747B76B2877 /* MessageUI.framework */; };
+		9DF916763786425DA1A50710 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B692A1329542399AEC30C8 /* NSString+URLEncoding.m */; };
+		4C35F8201F184011BF17AE78 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A59DC6C4364DDA962686BC /* SocialSharing.m */; };
+		414459589B5046D2A6298C74 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B15354A7FC240C6B8A2C0FA /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +263,16 @@
 		47E4EFE42EA34C329759D046 /* libiconv.dylib */ = {isa = PBXFileReference; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 		7F68B8664DAC433DAA7BC25F /* CFCallNumber.m */ = {isa = PBXFileReference; name = "CFCallNumber.m"; path = "mx.ferreyra.callnumber/CFCallNumber.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		E60A8817E8F7459B86AE6C86 /* CFCallNumber.h */ = {isa = PBXFileReference; name = "CFCallNumber.h"; path = "mx.ferreyra.callnumber/CFCallNumber.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FD6D8EF047D4481A9E5104F8 /* APPEmailComposer.m */ = {isa = PBXFileReference; name = "APPEmailComposer.m"; path = "cordova-plugin-email/APPEmailComposer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		88E3D44020FE499BBFE8E380 /* APPEmailComposerImpl.m */ = {isa = PBXFileReference; name = "APPEmailComposerImpl.m"; path = "cordova-plugin-email/APPEmailComposerImpl.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		47F63A9AFBD842AFA4E1DFB3 /* APPEmailComposer.h */ = {isa = PBXFileReference; name = "APPEmailComposer.h"; path = "cordova-plugin-email/APPEmailComposer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B649E66A27844BB8932E47EB /* APPEmailComposerImpl.h */ = {isa = PBXFileReference; name = "APPEmailComposerImpl.h"; path = "cordova-plugin-email/APPEmailComposerImpl.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		14E24EC4B7154747B76B2877 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		33B692A1329542399AEC30C8 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; name = "NSString+URLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		06A59DC6C4364DDA962686BC /* SocialSharing.m */ = {isa = PBXFileReference; name = "SocialSharing.m"; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C4F15E3ED2B44BFE8182C17C /* NSString+URLEncoding.h */ = {isa = PBXFileReference; name = "NSString+URLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		16DCDCE71F5A420DB9D34D4C /* SocialSharing.h */ = {isa = PBXFileReference; name = "SocialSharing.h"; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9B15354A7FC240C6B8A2C0FA /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +316,8 @@
 				60A22571F31E4C94B0C3CFCB /* CoreMedia.framework in Frameworks */,
 				6C24BD91E39E4F31BF3CEC5E /* CoreVideo.framework in Frameworks */,
 				43ED76939FD146F5BE6E8035 /* libiconv.dylib in Frameworks */,
+				6008645CA30E4467A0AD62B6 /* MessageUI.framework in Frameworks */,
+				414459589B5046D2A6298C74 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +425,8 @@
 				8BAB66D2094A4A02B986B2D1 /* CoreMedia.framework */,
 				61C0263A3A80467CB2D187C2 /* CoreVideo.framework */,
 				47E4EFE42EA34C329759D046 /* libiconv.dylib */,
+				14E24EC4B7154747B76B2877 /* MessageUI.framework */,
+				9B15354A7FC240C6B8A2C0FA /* Social.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -524,6 +544,14 @@
 				E4344B44D9A6481AAB15BF1E /* Window.h */,
 				7F68B8664DAC433DAA7BC25F /* CFCallNumber.m */,
 				E60A8817E8F7459B86AE6C86 /* CFCallNumber.h */,
+				FD6D8EF047D4481A9E5104F8 /* APPEmailComposer.m */,
+				88E3D44020FE499BBFE8E380 /* APPEmailComposerImpl.m */,
+				47F63A9AFBD842AFA4E1DFB3 /* APPEmailComposer.h */,
+				B649E66A27844BB8932E47EB /* APPEmailComposerImpl.h */,
+				33B692A1329542399AEC30C8 /* NSString+URLEncoding.m */,
+				06A59DC6C4364DDA962686BC /* SocialSharing.m */,
+				C4F15E3ED2B44BFE8182C17C /* NSString+URLEncoding.h */,
+				16DCDCE71F5A420DB9D34D4C /* SocialSharing.h */,
 			);
 			name = Plugins;
 			path = "3M Marine/Plugins";
@@ -676,6 +704,10 @@
 				BB6101D09604459DADD3FF65 /* CsZBar.m in Sources */,
 				CB13ECD993C247BCA6C9A7A3 /* AlmaZBarReaderViewController.m in Sources */,
 				DAC8779D34F54273909ECAEC /* CFCallNumber.m in Sources */,
+				FD16A54AFF33473A91E61888 /* APPEmailComposer.m in Sources */,
+				1B5962E9B43847719809B2E0 /* APPEmailComposerImpl.m in Sources */,
+				9DF916763786425DA1A50710 /* NSString+URLEncoding.m in Sources */,
+				4C35F8201F184011BF17AE78 /* SocialSharing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

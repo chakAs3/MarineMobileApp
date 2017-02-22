@@ -29,9 +29,7 @@ export class ProductsPage {
   ionViewCanEnter(): boolean{
    // here we can either return true or false
    // depending on if we want to leave this view
-
-      return true;
-
+      return this.af.auth.getAuth() != undefined;
   }
   openSubCategories(p){
     this.navCtrl.push(CategoriesPage,{id:p.$key,name:p.name});
@@ -41,6 +39,9 @@ export class ProductsPage {
   goHomePage(){
     console.log("goHomePage "+this.appNav.getPage("home"));
     this.navCtrl.setRoot(this.appNav.getPage("home"));
+  }
+  goToMylist(){
+    this.navCtrl.push(this.appNav.getPage("categoryproducts"),{name:"My Favorite List"});
   }
 
 }

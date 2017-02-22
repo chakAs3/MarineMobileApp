@@ -51,6 +51,12 @@
     <feature name="CallNumber">
         <param name="android-package" value="mx.ferreyra.callnumber.CFCallNumber" />
     </feature>
+    <feature name="EmailComposer">
+        <param name="android-package" value="de.martinreinhardt.cordova.plugins.email.EmailComposer" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
     <name>3M Marine</name>
     <description>First Marine App.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Trix Team(chakir qatab)</author>

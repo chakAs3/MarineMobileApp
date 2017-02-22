@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -7,7 +7,20 @@
     <ion-buttons end>
      <div (click)="goHomePage()" ><img src="./assets/imgs/3mm-logo.png" /></div>
     </ion-buttons>
-    <!-- <div end><img src="./assets/imgs/3mm-logo.png" /> </div> -->
+
+  </ion-navbar>
+</ion-header> -->
+<page-header title="HELP REQUEST" ></page-header>
+<ion-header style="z-index: 0 !important;">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>HELP</ion-title>
+    <ion-buttons end>
+     <div (click)="goHomePage()" ><img src="./assets/imgs/3mm-logo.png" /></div>
+    </ion-buttons>
+
   </ion-navbar>
 </ion-header>
 
@@ -34,10 +47,9 @@
 </ion-content>
 
 
-<!-- <ion-footer>
-  <ion-toolbar  >
-    <ion-title > .<img height="30" src="assets/3mlogo.png"></ion-title>
-
+<ion-footer>
+  <ion-toolbar>
+    <img id="3mlogo" height="26" src="assets/imgs/3m-logo.png">
   </ion-toolbar>
-</ion-footer> -->
+</ion-footer>
 <page-footer></page-footer>

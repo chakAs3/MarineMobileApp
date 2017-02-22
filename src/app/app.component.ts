@@ -54,6 +54,9 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component).catch(()=> console.log('should I stay or should I go now'));
+    this.nav.setRoot(page.component).catch(()=> {
+      console.log('should I stay or should I go now');
+       this.nav.setRoot(Login);
+    });
   }
 }

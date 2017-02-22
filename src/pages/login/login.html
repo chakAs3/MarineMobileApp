@@ -7,14 +7,10 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
  <ion-card *ngIf="isAuth==false">
-      <ion-card-header><h3>Login to 3M Marine</h3></ion-card-header>
+      <!-- <ion-card-header><h3>3M Marine Login</h3></ion-card-header> -->
       <ion-card-content>
-      <p>
-        Welcome to your marine application to get connected with your boat and the marine community .
-      </p>
-
 
       <form [formGroup]="loginForm">
        <ion-list>
@@ -41,10 +37,10 @@
        </div>
       </form>
       <hr>
-      <button ion-button secondary full (click)="loginWithFaceBook()">
+      <button ion-button secondary full icon-left (click)="loginWithFaceBook()">
           <ion-icon name="logo-facebook"></ion-icon>Use My Facebook Account
       </button>
-      <button ion-button secondary full (click)="signInWithGoogle()">
+      <button ion-button secondary full icon-left (click)="signInWithGoogle()">
          <ion-icon name="logo-google"></ion-icon> Use My Google Account
       </button>
 
@@ -65,9 +61,9 @@
 
        <ion-card-content>
           <p>You are logged in using <strong>{{ user.provider }}</strong></p>
-          <button ion-button secondary (click)="logout()">
-            <ion-icon name="log-out"></ion-icon>
+          <button ion-button secondary icon-right small (click)="logout()">
             Logout
+            <ion-icon name="log-out"></ion-icon>
           </button>
        </ion-card-content>
 
@@ -76,11 +72,10 @@
     </ion-card>
     <ion-card *ngIf="isAuth">
 
-      <ion-card-header>
+      <!-- <ion-card-header>
          <ion-card-title> <p>Additional Profile Info</p></ion-card-title>
 
-
-      </ion-card-header>
+      </ion-card-header> -->
 
 
        <ion-card-content (click)='user.mobile="300004940003"'>
@@ -93,9 +88,9 @@
               <ion-label floating>City</ion-label>
               <ion-input type="text" #city name="city" [value]='(user.details | async)?.city'></ion-input>
             </ion-item>
-            <button ion-button secondary (click)="saveInfo(mobile.value,city.value)">
-              <ion-icon name="save"></ion-icon>
+            <button ion-button secondary icon-right small (click)="saveInfo(mobile.value,city.value)">
               Save
+              <ion-icon name="checkmark"></ion-icon>
             </button>
        </ion-card-content>
 
@@ -105,10 +100,10 @@
 
 </ion-content>
 
-<!-- <ion-footer>
+<ion-footer>
   <ion-toolbar>
-    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
-
+    <img id="3mlogo" height="26" src="assets/imgs/3m-logo.png">
   </ion-toolbar>
-</ion-footer> -->
-<page-footer></page-footer>
+</ion-footer>
+<page-footer>
+</page-footer>

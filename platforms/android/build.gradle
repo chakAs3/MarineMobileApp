@@ -252,6 +252,7 @@ dependencies {
     compile "com.facebook.android:facebook-android-sdk:4.14.+"
     compile "com.google.android.gms:play-services-auth:+"
     compile "com.google.android.gms:play-services-identity:+"
+    compile "com.android.support:support-v4:24.1.1+"
     // SUB-PROJECT DEPENDENCIES END
 }
 

@@ -19,5 +19,7 @@
     "AVFoundation.framework": 1,
     "CoreMedia.framework": 1,
     "CoreVideo.framework": 1,
-    "libiconv.dylib": 1
+    "libiconv.dylib": 1,
+    "MessageUI.framework": 2,
+    "Social.framework": 1
 }

@@ -26,6 +26,7 @@ import { Chats_Page } from '../pages/chats/chats';
 import { ChatViewPage } from '../pages/chat-view/chat-view';
 
 import { Footer } from '../pages/footer/footer';
+import { Header } from '../pages/header/header';
 
 import { AuthProvider } from '../providers/auth-provider/auth-provider';
 import { ChatsProvider } from '../providers/chats-provider/chats-provider';
@@ -76,7 +77,8 @@ const firebaseConfig = {
     CompassPage,
     NautChartPage,
     ProductDetailsPage,
-    Footer
+    Footer,
+    Header
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -109,7 +111,8 @@ const firebaseConfig = {
     CompassPage,
     NautChartPage,
     ProductDetailsPage,
-    Footer
+    Footer,
+    Header
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},AppService,AppNavService,AuthProvider, ChatsProvider, UserProvider, UtilProvider, Storage]
 })

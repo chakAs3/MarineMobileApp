@@ -15,7 +15,7 @@ import { UserProvider} from '../../providers/user-provider/user-provider';
 })
 export class CategoryProductsPage {
   public categories_products: FirebaseListObservable<any>;
-  public products: FirebaseListObservable<any>;
+  public products: Array<any>;
   public item :String ;
   public mainCategoryName:String ;
   constructor(public navCtrl: NavController,private navParams: NavParams,public af: AngularFire ,public appService:AppService ,public userProvider:UserProvider) {
@@ -68,6 +68,27 @@ export class CategoryProductsPage {
   }
   goProductDetail(p){
     this.navCtrl.push(ProductDetailsPage ,{productData:p});
+
+  }
+  removeFromList(p){
+    console.log(p);
+    this.userProvider.getUid().then( uid => {
+        this.appService.removeFromMyListProducts(uid,p);
+      }
+    );
+  }
+  goToMylist(){
+    this.navCtrl.push(CategoryProductsPage,{name:"My Favorite List"});
+  }
+  contactForlist(){
+    let html = "<ul>\r"
+    for (let entry of this.products) {
+       console.log(entry.info); // 1, "string", false
+       html=html+ '\r\n<li>['+entry.info['STOCK NUMBER']+' : '+entry.info['PRODUCT DESCRIPTION']+']<li>'
+    }
+    html = html+"</ul>";
+    this.appService.sendMail(html);
+
 
   }
 

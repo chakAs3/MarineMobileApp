@@ -22646,6 +22646,22 @@ page-footer li {
   margin: 0px;
 }
 
+page-footer a {
+  color: #fff;
+  font-size: 9px;
+}
+
+page-footer ul {
+  list-style: none;
+  display: inline-block;
+  margin: 2px 4px 4px 4px;
+  padding-left: 10px;
+}
+
+page-footer li {
+  margin: 0px;
+}
+
 page-helpRequest ion-item img {
   margin-right: 10px;
 }
@@ -22689,6 +22705,12 @@ page-chart input#searchinputbox {
   width: 20px;
 }
 
+page-chart .button {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
 page-categories ion-thumbnail {
   background-color: #ae007b;
 }
@@ -22726,6 +22748,10 @@ page-products ion-list-header ion-label {
   height: 100%;
 }
 
+.ios page-map .title, .md page-map .title {
+  padding-top: 10px;
+}
+
 page-tips .card-title {
   font-size: 13px;
   display: block;
@@ -22751,6 +22777,6 @@ page-tips .card p {
   color: #222;
 }
 
-gs-weather ion-icon {
+gs-weather ion-content ion-icon {
   color: #00C8E6;
 }

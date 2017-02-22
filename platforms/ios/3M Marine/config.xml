@@ -100,6 +100,13 @@
     <feature name="CallNumber">
         <param name="ios-package" value="CFCallNumber" />
     </feature>
+    <feature name="EmailComposer">
+        <param name="ios-package" value="APPEmailComposer" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+        <param name="onload" value="true" />
+    </feature>
     <name>3M Marine</name>
     <description>First Marine App.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Trix Team(chakir qatab)</author>

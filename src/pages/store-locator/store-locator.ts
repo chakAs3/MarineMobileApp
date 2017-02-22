@@ -1,8 +1,9 @@
-import { Component }        from '@angular/core';
+import { Component , ViewChild }        from '@angular/core';
+import { Content } from 'ionic-angular';
 
 import { Observable }       from 'rxjs/Observable';
 import { Subject }          from 'rxjs/Subject';
-import { InAppBrowser } from 'ionic-native';
+import { InAppBrowser , CallNumber } from 'ionic-native';
 
 import { FirebaseListObservable } from 'angularfire2';
 import { AppService } from '../../app/app.service'
@@ -49,12 +50,15 @@ export class StoreLocator {
 	stores:FirebaseListObservable<any> ;
 	markers:Array<google.maps.Marker> =[];
 
+	@ViewChild(Content) content: Content;
+
+
 	constructor ( public appService:AppService) {}
 
   ngAfterViewInit() {
 
    this.loadMap();
-	 
+
   }
 
   loadMap() {
@@ -153,12 +157,23 @@ export class StoreLocator {
 			let marker = this.markers[s.$key];
 			this.infowindow.setContent(s.title);
 			this.infowindow.open(this.map,marker);
+			this.scrollToTop();
 
 		}
 
 		callStore(s){
-
+			CallNumber.callNumber(s.tel, true)
+	   .then(() => console.log('Launched dialer!'))
+	   .catch(() => console.log('Error launching dialer'));
 		}
+
+		// scrollTo() {
+    //  let yOffset = 0;// document.getElementById(element).offsetTop;
+    //  this.content.scrollTo(0, yOffset, 4000)
+    // }
+		scrollToTop() {
+       this.content.scrollToTop();
+    }
 
 
 }

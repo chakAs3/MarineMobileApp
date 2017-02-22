@@ -58,6 +58,12 @@
         },
         "mx.ferreyra.callnumber": {
             "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-email": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.trix.Mmarine381299"
         }
     },
     "dependent_plugins": {

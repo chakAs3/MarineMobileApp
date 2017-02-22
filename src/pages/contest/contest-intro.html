@@ -1,4 +1,5 @@
-<ion-header>
+<page-header title="CONTESTS" ></page-header>
+<ion-header style="z-index: 0 !important">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -13,7 +14,7 @@
     <ion-slide *ngFor="let slide of slides">
       <ion-toolbar>
         <ion-buttons end>
-          <button ion-button color="primary">Skip</button>
+          <button ion-button color="primary" (click)="startScan()">Skip</button>
         </ion-buttons>
       </ion-toolbar>
       <img [src]="slide.image" class="slide-image"/>
@@ -23,10 +24,10 @@
     <ion-slide>
       <ion-toolbar>
       </ion-toolbar>
-      <img src="https://raw.githubusercontent.com/driftyco/ionic-preview-app/master/src/assets/img/ica-slidebox-img-4.png" class="slide-image"/>
-      <h2 class="slide-title">Ready to Play?</h2>
+      <img [src]="kickstart.image" class="slide-image"/>
+      <h2 class="slide-title">{{kickstart.title}}</h2>
       <button ion-button large clear icon-right color="primary" (click)="startScan()">
-        Continue
+        {{kickstart.action}}
         <ion-icon name="arrow-forward"></ion-icon>
       </button>
     </ion-slide>
@@ -36,7 +37,8 @@
       Your QR Code :
     </ion-card-header>
     <ion-card-content>
-      {{scannedCode}}
+      <ion-badge><h3>{{scannedCode}}</h3></ion-badge>
+      <p>You participated to the draw to Win a super Jet Ski</p>
     </ion-card-content>
   </ion-card>
 </ion-content>

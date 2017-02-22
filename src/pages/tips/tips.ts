@@ -28,7 +28,7 @@ export class TipsPage {
    // here we can either return true or false
    // depending on if we want to leave this view
 
-      return true;
+      return this.af.auth.getAuth() != undefined;
 
   }
 

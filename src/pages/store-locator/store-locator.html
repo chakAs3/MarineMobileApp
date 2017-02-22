@@ -1,4 +1,5 @@
-<ion-header>
+<page-header title='STORE LOCATOR'  ></page-header>
+<ion-header style="z-index:0 !important">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -9,7 +10,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
 
    <div #map id="map" style="height:50%;"></div>
 
@@ -21,7 +22,7 @@
          <ion-icon name="navigate"></ion-icon>
          <div>Directions</div>
        </button>
-       <button ion-button icon-left clear small (click)='callStore(s)' left>
+       <button ion-button icon-left clear small *ngIf='s.tel' (click)='callStore(s)' left>
          <ion-icon name="call"></ion-icon>
          <div>Call</div>
        </button>
@@ -39,3 +40,4 @@
 
   </ion-toolbar>
 </ion-footer>
+<page-footer><page-footer>

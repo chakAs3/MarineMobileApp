@@ -64,5 +64,8 @@ export class CategoriesPage {
     this.navCtrl.push(CategoryProductsPage,{id:this.id,category:p.$key,name:p.info.name});
     //console.log(" NAME: "+p.info.name);
   }
+  goToMylist(){
+    this.navCtrl.push(CategoryProductsPage,{name:"My Favorite List"});
+  }
 
 }

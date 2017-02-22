@@ -113,6 +113,7 @@
       <string>fbshareextension</string>
       <string>googlechromes</string>
       <string>comgooglemaps</string>
+      <string>mailto</string>
     </array>
     <key>Google Maps API Key</key>
     <string>YOUR_IOS_API_KEY_IS_HERE</string>

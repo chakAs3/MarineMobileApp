@@ -1,4 +1,5 @@
-<ion-header>
+<page-header title="Boat Care Products" ></page-header>
+<ion-header style="z-index: 0 !important">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -14,6 +15,9 @@
 </ion-header>
 
 <ion-content >
+  <ion-fab top right>
+   <button color="secondary" ion-button small (click)="goToMylist()"><ion-icon name="cart"></ion-icon>My list</button>
+  </ion-fab>
 
   <ion-list>
     <ion-list-header>
@@ -32,10 +36,10 @@
 
 </ion-content>
 
-<!-- <ion-footer>
+<ion-footer>
   <ion-toolbar>
     <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
 
   </ion-toolbar>
-</ion-footer> -->
+</ion-footer>
 <page-footer></page-footer>
