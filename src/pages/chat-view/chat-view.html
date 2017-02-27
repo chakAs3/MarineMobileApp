@@ -26,20 +26,20 @@
 
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar>
+<ion-footer color="secondary">
+  <ion-toolbar >
     <ion-row>
       <ion-col width-10>
           <ion-spinner *ngIf="!(chats)"></ion-spinner>
       </ion-col>
 
       <ion-col width-70 [hidden]="!chats">
-          <ion-input type="text"  placeholder="Enter Message"
+          <ion-input type="text" style="color:#fff" placeholder="Enter Message"
               [(ngModel)]="message">
           </ion-input>
       </ion-col>
       <ion-col width-20 [hidden]="!chats">
-          <button ion-button full color="dark" clear (click)="sendMessage()"><ion-icon name="send"></ion-icon></button>
+          <button ion-button full color="secondary" clear (click)="sendMessage()"><ion-icon name="send"></ion-icon></button>
       </ion-col>
     </ion-row>
   </ion-toolbar>

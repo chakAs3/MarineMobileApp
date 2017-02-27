@@ -22,9 +22,9 @@
       <p [innerHTML]="slide.description"></p>
     </ion-slide>
     <ion-slide>
-      <ion-toolbar>
-      </ion-toolbar>
-      <img [src]="kickstart.image" class="slide-image"/>
+
+      <img [src]="kickstart.image" class="slide-image" style="height:80px"/>
+      <p>{{kickstart.content}}</p>
       <h2 class="slide-title">{{kickstart.title}}</h2>
       <button ion-button large clear icon-right color="primary" (click)="startScan()">
         {{kickstart.action}}
@@ -37,8 +37,13 @@
       Your QR Code :
     </ion-card-header>
     <ion-card-content>
-      <ion-badge><h3>{{scannedCode}}</h3></ion-badge>
-      <p>You participated to the draw to Win a super Jet Ski</p>
+      <ion-badge color="secondary"><h3 >{{scannedCode | json}}</h3></ion-badge>
+      <br>
+      <div>You participated to the draw to Win a super Jet Ski</div>
+      <br>
+     <div>Like Our Social pages and stay connected to get more info </div>
+
+      <div class="fb-page" data-href="https://www.facebook.com/3MMarineGulf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/3MMarineGulf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/3MMarineGulf">3M Marine Gulf</a></blockquote></div>
     </ion-card-content>
   </ion-card>
 </ion-content>

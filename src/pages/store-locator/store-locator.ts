@@ -4,6 +4,7 @@ import { Content } from 'ionic-angular';
 import { Observable }       from 'rxjs/Observable';
 import { Subject }          from 'rxjs/Subject';
 import { InAppBrowser , CallNumber } from 'ionic-native';
+import {Geolocation  ,Geoposition} from 'ionic-native';
 
 import { FirebaseListObservable } from 'angularfire2';
 import { AppService } from '../../app/app.service'
@@ -51,13 +52,19 @@ export class StoreLocator {
 	markers:Array<google.maps.Marker> =[];
 
 	@ViewChild(Content) content: Content;
-
+    pos
 
 	constructor ( public appService:AppService) {}
 
   ngAfterViewInit() {
 
-   this.loadMap();
+
+	  Geolocation.getCurrentPosition().then(pos => {
+		  // console.log('lat: ' + pos.coords.latitude + ', lon: ' + pos.coords.longitude);
+		  this.pos = pos ;
+		  this.loadMap();
+	  }).catch(err => console.log(err) );
+
 
   }
 
@@ -71,6 +78,8 @@ export class StoreLocator {
     //let map = new GoogleMap(element);
 
    let latLng = new google.maps.LatLng(25.2847538,55.3530651);
+
+   if(this.pos)  latLng = new google.maps.LatLng(this.pos.coords.latitude,this.pos.coords.longitude);
 
    let mapOptions = {
      center: latLng,

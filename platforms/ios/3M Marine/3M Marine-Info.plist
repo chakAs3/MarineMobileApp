@@ -21,18 +21,67 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.0.1</string>
+    <string>0.0.3</string>
     <key>CFBundleSignature</key>
     <string>????</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb3618d4f0</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>REVERSED_CLIENT_ID</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>com.googleusercontent.apps.76935023754-nc83sq2ad2utgssa21o7bghduca4so4l</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>com.trix.Mmarine381299</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>com.trix.Mmarine381299</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>REVERSED_CLIENT_ID</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>76935023754-nc83sq2ad2utgssa21o7bghduca4so4l.apps.googleusercontent.com</string>
+        </array>
+      </dict>
+    </array>
     <key>CFBundleVersion</key>
-    <string>0.0.1</string>
+    <string>0.0.3</string>
+    <key>FacebookAppID</key>
+    <string>3618d4f0</string>
+    <key>FacebookDisplayName</key>
+    <string>3MMarine</string>
+    <key>Google Maps API Key</key>
+    <string>YOUR_IOS_API_KEY_IS_HERE</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>fbapi</string>
+      <string>fb-messenger-api</string>
+      <string>fbauth2</string>
+      <string>fbshareextension</string>
+      <string>googlechromes</string>
+      <string>comgooglemaps</string>
+      <string>mailto</string>
+    </array>
     <key>LSRequiresIPhoneOS</key>
-    <true/>
-    <key>NSMainNibFile</key>
-    <string/>
-    <key>NSMainNibFile~ipad</key>
-    <string/>
-    <key>UIRequiresFullScreen</key>
     <true/>
     <key>NSAppTransportSecurity</key>
     <dict>
@@ -72,54 +121,15 @@
         <dict/>
       </dict>
     </dict>
-    <key>FacebookAppID</key>
-    <string>3618d4f0</string>
-    <key>FacebookDisplayName</key>
-    <string>3MMarine</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>fb3618d4f0</string>
-        </array>
-      </dict>
-      <dict>
-        <key>CFBundleTypeRole</key>
-        <string>Editor</string>
-        <key>CFBundleURLName</key>
-        <string>REVERSED_CLIENT_ID</string>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>76935023754-nc83sq2ad2utgssa21o7bghduca4so4l.apps.googleusercontent.com</string>
-        </array>
-      </dict>
-      <dict>
-        <key>CFBundleTypeRole</key>
-        <string>Editor</string>
-        <key>CFBundleURLName</key>
-        <string>com.trix.Mmarine381299</string>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>com.trix.Mmarine381299</string>
-        </array>
-      </dict>
-    </array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-      <string>fbapi</string>
-      <string>fb-messenger-api</string>
-      <string>fbauth2</string>
-      <string>fbshareextension</string>
-      <string>googlechromes</string>
-      <string>comgooglemaps</string>
-      <string>mailto</string>
-    </array>
-    <key>Google Maps API Key</key>
-    <string>YOUR_IOS_API_KEY_IS_HERE</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string/>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>$NSLocationAlwaysUsageDescription</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string/>
+    <key>NSMainNibFile</key>
+    <string/>
+    <key>NSMainNibFile~ipad</key>
+    <string/>
+    <key>UIRequiresFullScreen</key>
+    <true/>
   </dict>
 </plist>

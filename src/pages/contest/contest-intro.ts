@@ -36,6 +36,9 @@ export class ContestIntroPage {
     console.log( af.auth.getAuth() );
     af.database.list("contest/slides").subscribe(slides => this.slides = slides );
     af.database.object("contest/kickstart").subscribe(kickstart => this.kickstart = kickstart);
+
+    this.appService.getQRCode().then(qrCode => qrCode.subscribe(code => this.scannedCode = code.$value));
+
   }
   scannedCode ;
 

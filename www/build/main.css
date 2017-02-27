@@ -22561,6 +22561,14 @@ ion-content {
   margin-right: 0.5em;
 }
 
+.chat-view .toolbar .toolbar-background {
+  background: #fff;
+}
+
+.chat-view .ion-input {
+  color: #fff;
+}
+
 .chat-view .messages {
   width: 100%;
   position: absolute;
@@ -22687,10 +22695,10 @@ page-home ion-content img {
 }
 
 page-home .big-text {
-  font-size: 32px;
+  font-size: 34px;
   color: red;
   position: absolute;
-  bottom: 120px;
+  bottom: 160px;
 }
 
 page-home ion-content .scroll-content {
@@ -22726,7 +22734,7 @@ page-categories ion-list-header ion-label {
 }
 
 page-products ion-thumbnail {
-  background-color: #ae007b;
+  background-color: #fcfcfc;
   border: 1px solid #BDCCD4;
 }
 

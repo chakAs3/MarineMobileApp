@@ -1,4 +1,10 @@
 .chat-view {
+  .toolbar .toolbar-background{
+    background: #fff;
+  }
+  .ion-input {
+    color:#fff;
+  }
   .messages {
     width: 100%;
     position: absolute;

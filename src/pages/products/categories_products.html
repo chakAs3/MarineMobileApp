@@ -40,7 +40,7 @@
     </ion-item>
 
   </ion-list>
-  <ion-item><button ion-button small (click)="contactForlist()">Contact us for this list</button></ion-item>
+  <ion-item *ngIf='mainCategoryName=="My Favorite List"'><button ion-button small (click)="contactForlist()">Contact us for this list</button></ion-item>
 
 </ion-content>
 

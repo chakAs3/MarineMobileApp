@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import { AngularFire, AuthProviders } from 'angularfire2';
+import { AngularFire, AuthProviders ,FirebaseListObservable} from 'angularfire2';
 
 import {Login} from '../login/login'
 
@@ -16,11 +16,16 @@ import { AppNavService } from '../../app/appNav.service';
 })
 export class HelpRequestPage {
 
+  publicNumbers :FirebaseListObservable<any>;
+  privateNumbers :FirebaseListObservable<any>
+
   constructor(public navCtrl: NavController,public af: AngularFire,public appNav:AppNavService) {
     this.af.auth.subscribe(
       user => console.trace(user+" There is a user   "),
       error => console.trace(error)
     );
+
+    
 
   }
 

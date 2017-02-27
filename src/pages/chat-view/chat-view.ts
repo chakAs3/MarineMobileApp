@@ -6,6 +6,8 @@ import { UserProvider } from '../../providers/user-provider/user-provider';
 
 @Component({
   templateUrl: 'chat-view.html',
+  selector: 'chat-view',
+  styles:[".toolbar .toolbar-background{ background: #fff; } "]
 })
 export class ChatViewPage {
   message: string;

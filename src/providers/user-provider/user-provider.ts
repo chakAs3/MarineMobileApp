@@ -15,11 +15,12 @@ export class UserProvider {
   // Create User in Firebase
   createUser(userCredentails, uid) {
       let currentUserRef = this.af.database.object(`/users/${uid}`);
+      console.log(uid);
       console.log(userCredentails);
       if(userCredentails.photoURL)
-        currentUserRef.set({email: userCredentails.email,picture:userCredentails.photoURL});
+        currentUserRef.update({email: userCredentails.email,picture:userCredentails.photoURL});
       else
-        currentUserRef.set({email: userCredentails.email});
+        currentUserRef.update({email: userCredentails.email});
   }
 
   // Get Info of Single User
@@ -32,7 +33,9 @@ export class UserProvider {
 
   updateUser(details){
     this.getUid().then(uid => {
-      this.af.database.object(`/users/${uid}`).update({ city:details.city , mobile:details.mobile});
+      this.af.database.object(`/users/${uid}/city`).set(details.city);
+      this.af.database.object(`/users/${uid}/mobile`).set(details.mobile);
+
     });
   }
 

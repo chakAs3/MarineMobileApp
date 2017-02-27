@@ -62,7 +62,7 @@ export class Login {
     }).then((data) => {
        this.storage.set('uid', data.uid);
        this.userProvider.createUser({email:data.auth.email,photoURL:data.auth.photoURL}, data.uid);
-      console.trace("data");
+      console.trace("login from "+from);
       console.trace(data);
     }, (error) => {
         let alert = this.util.doAlert("Error",error.message,"Can not create user !!");
@@ -73,24 +73,31 @@ export class Login {
   facebookCredentialText ;
 
   loginWithFaceBook(){
-    this.auth.signInWithFacebook().then(res =>  {
+    this.auth.signInWithFacebook().then(data =>  {
        //this.facebookCredentialText = res.authResponse;
-
-      const facebookCredential = firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
-        this.facebookCredentialText = facebookCredential;
-
-      this.facebookCredentialText = firebase.auth() ;
-      firebase.auth().signInWithCredential(facebookCredential)
-      .then((success) => {
-        this.facebookCredentialText = success
-      //  console.log("Firebase success: " + JSON.stringify(success));
-        this.message = success;
-      })
-      .catch((error) => {
-        this.facebookCredentialText = error
-        //console.log("Firebase failure: " + JSON.stringify(error));
-        //this.message = "Firebase failure: " + JSON.stringify(error);
-      });
+       console.log("loginWithFaceBook res");
+       this.storage.set('uid', data.uid);
+       this.userProvider.createUser({email:data.auth.email,photoURL:data.auth.photoURL}, data.uid);
+       console.log(data);
+      // const facebookCredential = firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
+      //   this.facebookCredentialText = facebookCredential;
+      //
+      //
+      //   console.log("facebookCredential "+facebookCredential);
+      //
+      // this.facebookCredentialText = firebase.auth() ;
+      // firebase.auth().signInWithCredential(facebookCredential)
+      // .then((success) => {
+      //   this.facebookCredentialText = success;
+      //
+      //   console.log("Firebase success: " + JSON.stringify(success));
+      //   this.message = success;
+      // })
+      // .catch((error) => {
+      //   this.facebookCredentialText = error
+      //   //console.log("Firebase failure: " + JSON.stringify(error));
+      //   //this.message = "Firebase failure: " + JSON.stringify(error);
+      // });
 
     } );
   }

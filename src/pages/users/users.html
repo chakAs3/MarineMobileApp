@@ -16,10 +16,10 @@
       <span *ngFor="let user of users | async">
         <a ion-item (click)="openChat(user.$key)" *ngIf="user.$key !== uid">
              <ion-avatar item-left>
-                <img *ngIf="!user.picture" src="assets/imgs/default.jpeg">
+                <img *ngIf="!user.picture" src="assets/imgs/avatar.jpeg">
                 <img *ngIf="user.picture" src="{{user.picture}}">
              </ion-avatar>
-             <h2>{{user.email}}</h2>
+             <h2>{{  user.displayName || (user.email).split('@')[0] }}</h2>
         </a>
       </span>
     </ion-list>

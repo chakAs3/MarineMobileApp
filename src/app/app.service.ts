@@ -85,6 +85,9 @@ export class AppService {
    saveQRCode(qrcode){
      this.userProvider.getUid().then(userID => this.af.database.object(`user/${userID}/qrcode`).set(qrcode) );
    }
+    getQRCode():Promise<any>{
+        return this.userProvider.getUid().then(userID => this.af.database.object(`user/${userID}/qrcode`) );
+    }
 
    sendMail(productslist?){
       // Check if sharing via email is supported
