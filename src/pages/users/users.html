@@ -19,7 +19,7 @@
                 <img *ngIf="!user.picture" src="assets/imgs/avatar.jpeg">
                 <img *ngIf="user.picture" src="{{user.picture}}">
              </ion-avatar>
-             <h2>{{  user.displayName || (user.email).split('@')[0] }}</h2>
+             <h2>{{  user.displayName || getDisplay( user.email )}}</h2>
         </a>
       </span>
     </ion-list>

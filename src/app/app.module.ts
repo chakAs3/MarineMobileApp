@@ -10,6 +10,7 @@ import { ProductsPage } from '../pages/products/products';
 import { CategoriesPage } from '../pages/products/categories';
 import { CategoryProductsPage } from '../pages/products/categories_products';
 import { ProductDetailsPage } from '../pages/products/product_details';
+import { ShoppingProductsPage } from '../pages/shopping/shopping_products';
 
 import { TipsPage } from '../pages/tips/tips';
 import { WeatherComponent } from '../pages/weather/weather.component';
@@ -24,6 +25,7 @@ import { Users_Page } from '../pages/users/users';
 import { Chats_Page } from '../pages/chats/chats';
 //import { AccountPage } from '../pages/account/account';
 import { ChatViewPage } from '../pages/chat-view/chat-view';
+import { WinnerDrawPage } from '../pages/winnerdraw/users'
 
 import { Footer } from '../pages/footer/footer';
 import { Header } from '../pages/header/header';
@@ -64,6 +66,7 @@ const firebaseConfig = {
     ProductsPage,
     CategoriesPage,
     CategoryProductsPage,
+    ShoppingProductsPage,
     TipsPage,
     WeatherComponent,
     ContestIntroPage,
@@ -78,7 +81,8 @@ const firebaseConfig = {
     NautChartPage,
     ProductDetailsPage,
     Footer,
-    Header
+    Header,
+    WinnerDrawPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -98,6 +102,7 @@ const firebaseConfig = {
     ProductsPage,
     CategoriesPage,
     CategoryProductsPage,
+    ShoppingProductsPage,
     TipsPage,
     WeatherComponent,
     ContestIntroPage,
@@ -112,7 +117,8 @@ const firebaseConfig = {
     NautChartPage,
     ProductDetailsPage,
     Footer,
-    Header
+    Header,
+    WinnerDrawPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},AppService,AppNavService,AuthProvider, ChatsProvider, UserProvider, UtilProvider, Storage]
 })

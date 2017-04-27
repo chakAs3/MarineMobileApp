@@ -1,5 +1,5 @@
 <page-header title="CHATS" ></page-header>
-<ion-header style="display:none !important">
+<ion-header style="z-index:0 !important">
     <ion-navbar color="primary">
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
@@ -17,6 +17,8 @@
                 <img *ngIf="!(chat.info | async).picture" src="assets/imgs/avatar.jpeg">
                 <img *ngIf="(chat.info | async).picture" src="{{(chat.info | async).picture}}">
         </ion-avatar>
-        <span>{{(chat.info | async).email}}</span>
+        <span>{{  chat.info.displayName || getDisplay( (chat.info | async).email)}}</span>
+        <span item-right><ion-badge *ngIf="chat.unread==true" color="secondary">.</ion-badge></span>
+
      </a>
 </ion-content>

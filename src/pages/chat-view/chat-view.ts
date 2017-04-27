@@ -28,6 +28,8 @@ export class ChatViewPage {
     chatsProvider.getChatRef(this.uid, this.interlocutor)
     .then((chatRef:any) => {
         this.chats = this.af.database.list(chatRef);
+        this.chats.debounceTime(700).subscribe(data => this.content.scrollToBottom());
+        chatsProvider.setMessageRead(this.uid, this.interlocutor);
     });
   }
 
@@ -45,6 +47,8 @@ export class ChatViewPage {
           };
           this.chats.push(chat);
           this.message = "";
+          this.chatsProvider.setMessageUnRead(this.uid, this.interlocutor);
+
       }
   };
 

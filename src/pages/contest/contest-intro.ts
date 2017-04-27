@@ -32,12 +32,18 @@ export class ContestIntroPage {
   ];
 
   kickstart ={};
+  links:FirebaseListObservable<any> ;
+  message1:string ;
+  message:string ;
   constructor(public appService:AppService,public af:AngularFire){
     console.log( af.auth.getAuth() );
     af.database.list("contest/slides").subscribe(slides => this.slides = slides );
     af.database.object("contest/kickstart").subscribe(kickstart => this.kickstart = kickstart);
-
+    this.links = af.database.list("contest/links");
+    af.database.object("contest/message").subscribe(message => this.message = message.$value);
     this.appService.getQRCode().then(qrCode => qrCode.subscribe(code => this.scannedCode = code.$value));
+
+    af.database.object("contest/message1").subscribe(message => this.message1 = message.$value);
 
   }
   scannedCode ;

@@ -11,12 +11,16 @@ export class AppService {
   public products: FirebaseListObservable<any>;
 
   public categories :   any;
+
+  public sendtoemail:string ;
   constructor(public af: AngularFire,public userProvider: UserProvider,public alertCtrl:AlertController) {
     this.products = this.af.database.list('portfolios',{
       query: {
         orderByChild: 'order',
       }
     });
+
+    this.af.database.object('email').subscribe(data => this.sendtoemail = data.$value);
 
 
   }
@@ -58,13 +62,20 @@ export class AppService {
      return this.products ;
    }
    getCategories(id){
-     this.categories =  this.af.database.list('portfolios/'+id+'/families')
+     this.categories =  this.af.database.list('portfolios/'+id+'/families',{
+       query: {
+         orderByChild: 'order',
+       } });
 
      return this.categories;
    }
 
    getCategoriesProducts(id,category){
      return this.af.database.list('families/'+category+'/products/');
+   }
+
+   getShopProducts(){
+     return this.af.database.list('shopping_products/');
    }
 
    getMyListProducts(uid){
@@ -91,11 +102,12 @@ export class AppService {
 
    sendMail(productslist?){
       // Check if sharing via email is supported
+      // console.log(this.sendtoemail);
       SocialSharing.canShareViaEmail().then(() => {
       // Sharing via email is possible
       //this.presentAlert('Sharing via email is possible');
       // Share via email
-        SocialSharing.shareViaEmail('Hi i want more info about '+productslist, '3M Product list request',[ 'javachakir@gmail.com' ]).then(() => {
+        SocialSharing.shareViaEmail('Hi i want more info about '+productslist, '3M Product list request',[ this.sendtoemail ]).then(() => {
          // Success!
          //this.presentAlert('Success');
         }).catch(() => {

@@ -126,14 +126,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-cszbar": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-cszbar"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "mx.ferreyra.callnumber": {
         "source": {
             "type": "registry",
@@ -154,6 +146,16 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-x-socialsharing"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-cszbar": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tjwoon/csZBar.git",
+            "subdir": ".",
+            "ref": "master"
         },
         "is_top_level": true,
         "variables": {}

@@ -8,17 +8,17 @@ export class ChatsProvider {
   // get list of Chats of a Logged In User
   getChats() {
      return this.up.getUid().then(uid => {
-        let chats = this.af.database.list(`/users/${uid}/chats`);
+        let chats = this.af.database.list(`/users/${uid}/chats`,{ query: { orderByValue: true} });
         return chats;
      });
   }
-  
+
   // Add Chat References to Both users
   addChats(uid,interlocutor) {
       // First User
       let endpoint = this.af.database.object(`/users/${uid}/chats/${interlocutor}`);
       endpoint.set(true);
-      
+
       // Second User
       let endpoint2 = this.af.database.object(`/users/${interlocutor}/chats/${uid}`);
       endpoint2.set(true);
@@ -43,8 +43,27 @@ export class ChatsProvider {
                 }
             });
       });
-      
+
       return promise;
   }
-}
 
+
+  setMessageRead(uid, interlocutor){
+    // First User
+    let endpoint = this.af.database.object(`/users/${uid}/chats/${interlocutor}`);
+    endpoint.set("read");
+
+  }
+  setMessageUnRead(uid, interlocutor){
+    // Second User
+    let endpoint2 = this.af.database.object(`/users/${interlocutor}/chats/${uid}`);
+    endpoint2.set(true);
+  }
+
+  getUndreadChats(){
+    return this.up.getUid().then(uid => {
+       let chats = this.af.database.list(`/users/${uid}/chats`, {query: {equalTo:true,orderByValue: true}});
+       return chats;
+    });
+  }
+}

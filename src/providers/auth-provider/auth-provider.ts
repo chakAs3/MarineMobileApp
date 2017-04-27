@@ -12,7 +12,7 @@ export class AuthProvider {
   constructor(public auth$: AngularFireAuth, public local:Storage,private platform: Platform) {
 
 
-    this.authState = auth$.getAuth();
+    //this.authState = auth$.getAuth();
     auth$.subscribe((state: FirebaseAuthState) => {
       this.authState = state;
     });

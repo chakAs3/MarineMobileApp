@@ -2,19 +2,19 @@
   <ion-navbar color="primary">
     <ion-title>Chat</ion-title>
     <ion-buttons end>
-      <button ion-button (click)="sendPicture()"><ion-icon name="image" item-left></ion-icon> Send Image</button>
+      <!-- <button ion-button (click)="sendPicture()"><ion-icon name="image" item-left></ion-icon> Send Image</button> -->
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="chat-view" id="chat-view">
   <div class="messages">
-      <ion-item class="message" *ngFor="let chat of chats | async" [ngClass]="{'me': uid === chat.from}">
+      <ion-item class="message" *ngFor="let chat of chats | async" [ngClass]="{'me': uid === chat.from}" text-wrap>
         <ion-avatar *ngIf="uid === chat.from" item-right>
-          <img [src]="(getUserPicture(chat.from) | async).$value || 'assets/imgs/default.jpeg'" class="picture">
+          <img [src]="(getUserPicture(chat.from) | async).$value || 'assets/imgs/avatar.jpeg'" class="picture">
         </ion-avatar>
         <ion-avatar *ngIf="uid != chat.from" item-left>
-          <img [src]="(getUserPicture(chat.from) | async).$value || 'assets/imgs/default.jpeg'" class="picture">
+          <img [src]="(getUserPicture(chat.from) | async).$value || 'assets/imgs/avatar.jpeg'" class="picture">
         </ion-avatar>
         <span *ngIf="chat.message">{{chat.message}}</span>
 

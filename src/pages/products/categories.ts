@@ -31,9 +31,9 @@ export class CategoriesPage {
 //this.af.database.object(`/families/${family.$key}`)
     this.mainCategoryName = name;
     this.categories = appService.getCategories(this.id);
-    let key = "Hookit™ Purple+ Abrasive Discs"
-    this.af.database.object(`/families/Hookit™ Purple+ Abrasive Discs/`).subscribe(console.log);
-
+    // let key = "Hookit™ Purple+ Abrasive Discs"
+    // this.af.database.object(`/families/Hookit™ Purple+ Abrasive Discs/`).subscribe(console.log);
+    //this.categories.subscribe(console.log);
 
     this.categories.subscribe( families => this.families = families.map( family => {
        family.info ={};// {name:"-"+family.$key,image:" "} ;

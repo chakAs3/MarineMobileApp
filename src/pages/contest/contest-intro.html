@@ -10,7 +10,7 @@
 
 <ion-content class="tutorial-page">
 
-  <ion-slides pager *ngIf="scannedCode==null">
+  <ion-slides pager *ngIf="!scannedCode">
     <ion-slide *ngFor="let slide of slides">
       <ion-toolbar>
         <ion-buttons end>
@@ -26,7 +26,7 @@
       <img [src]="kickstart.image" class="slide-image" style="height:80px"/>
       <p>{{kickstart.content}}</p>
       <h2 class="slide-title">{{kickstart.title}}</h2>
-      <button ion-button large clear icon-right color="primary" (click)="startScan()">
+      <button ion-button large clear icon-right *ngIf="kickstart.action" color="primary" (click)="startScan()">
         {{kickstart.action}}
         <ion-icon name="arrow-forward"></ion-icon>
       </button>
@@ -39,11 +39,11 @@
     <ion-card-content>
       <ion-badge color="secondary"><h3 >{{scannedCode | json}}</h3></ion-badge>
       <br>
-      <div>You participated to the draw to Win a super Jet Ski</div>
+        <div>{{message1}}</div>
       <br>
-     <div>Like Our Social pages and stay connected to get more info </div>
+     <div (click)="startScan()">{{ message    }}  </div>
 
-      <div class="fb-page" data-href="https://www.facebook.com/3MMarineGulf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/3MMarineGulf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/3MMarineGulf">3M Marine Gulf</a></blockquote></div>
+      <div *ngFor="let p of links | async" style="display: inline-block;margin:10px"><a [href]="p.link" ><div style="width:35px;display: inline-block;"><img [src]="p.image" style="height:35px:width:35px;display: inline-block;"> </div><h4 style="display: inline-block;">{{p.name}}</h4></a></div>
     </ion-card-content>
   </ion-card>
 </ion-content>

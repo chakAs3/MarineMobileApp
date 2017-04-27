@@ -22654,20 +22654,24 @@ page-footer li {
   margin: 0px;
 }
 
-page-footer a {
+page-header a {
   color: #fff;
   font-size: 9px;
 }
 
-page-footer ul {
+page-header ul {
   list-style: none;
   display: inline-block;
   margin: 2px 4px 4px 4px;
   padding-left: 10px;
 }
 
-page-footer li {
+page-header li {
   margin: 0px;
+}
+
+page-header .badge {
+  border-radius: 14px;
 }
 
 page-helpRequest ion-item img {
@@ -22731,6 +22735,22 @@ page-categories ion-list-header ion-label {
   text-transform: uppercase;
   font-size: 24px;
   color: #192758;
+}
+
+page-categories_products .fit-thumbnail {
+  object-fit: cover;
+}
+
+page-categories_products ion-thumbnail img {
+  width: auto !important;
+  height: 80px;
+  margin: auto;
+}
+
+page-products_details img.product-image {
+  width: auto !important;
+  max-height: 200px;
+  margin: auto;
 }
 
 page-products ion-thumbnail {

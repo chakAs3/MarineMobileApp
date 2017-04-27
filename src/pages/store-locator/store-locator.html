@@ -15,7 +15,7 @@
    <div #map id="map" style="height:50%;"></div>
 
    <ion-list>
-     <ion-item  *ngFor="let s of stores | async " (click)='showInMap(s)'>
+     <ion-item  *ngFor="let s of stores | async " (click)='showInMap(s)' text-wrap>
        <div class="title"><h5> {{ s.title }}</h5></div>
        <p>{{ s.address }}</p>
        <button ion-button icon-left clear small (click)='navigateTo(s)' left>

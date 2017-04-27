@@ -113,14 +113,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-plugin-cszbar.zBar",
-        "file": "plugins/cordova-plugin-cszbar/www/zbar.js",
-        "pluginId": "cordova-plugin-cszbar",
-        "clobbers": [
-            "cloudSky.zBar"
-        ]
-    },
-    {
         "id": "mx.ferreyra.callnumber.CallNumber",
         "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
         "pluginId": "mx.ferreyra.callnumber",
@@ -144,6 +136,14 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
+    },
+    {
+        "id": "cordova-plugin-cszbar.zBar",
+        "file": "plugins/cordova-plugin-cszbar/www/zbar.js",
+        "pluginId": "cordova-plugin-cszbar",
+        "clobbers": [
+            "cloudSky.zBar"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -162,10 +162,10 @@ module.exports.metadata =
     "cordova-plugin-device-orientation": "1.0.5",
     "cordova-plugin-device-motion": "1.2.3",
     "cordova-plugin-inappbrowser": "1.6.1",
-    "cordova-plugin-cszbar": "1.3.1",
     "mx.ferreyra.callnumber": "0.0.2",
     "cordova-plugin-email": "1.2.6",
-    "cordova-plugin-x-socialsharing": "5.1.6"
+    "cordova-plugin-x-socialsharing": "5.1.6",
+    "cordova-plugin-cszbar": "1.3.2"
 };
 // BOTTOM OF METADATA
 });

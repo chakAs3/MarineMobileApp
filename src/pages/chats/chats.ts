@@ -8,7 +8,8 @@ import 'rxjs/add/operator/map';
 import { ChatViewPage }  from '../chat-view/chat-view';
 
 @Component({
-    templateUrl: 'chats.html'
+    templateUrl: 'chats.html',
+    styles:[".badge { border-radius: 14px;}"]
 })
 export class Chats_Page {
     chats:Observable<any[]>;
@@ -20,7 +21,10 @@ export class Chats_Page {
             this.chatsProvider.getChats()
             .then(chats => {
                 this.chats = chats.map(users => {
-                    return users.map(user => {
+                    return users.reverse().reverse().map(user => {
+                      console.log("chat -->"+user.$value);
+                      console.log(user);
+                        user.unread = user.$value ;
                         user.info = this.af.database.object(`/users/${user.$key}`);
                         return user;
                     });
@@ -35,5 +39,11 @@ export class Chats_Page {
             let param = {uid: uid, interlocutor: key};
             this.nav.push(ChatViewPage,param);
         });
+    }
+
+    getDisplay(email){
+        if(email && email.split("@"))
+        return  email.split("@")[0];
+      return "Unknown";
     }
 }

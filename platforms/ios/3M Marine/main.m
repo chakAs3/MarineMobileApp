@@ -18,7 +18,7 @@
  */
 //
 //  main.m
-//  V2 Test
+//  3M Marine
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.

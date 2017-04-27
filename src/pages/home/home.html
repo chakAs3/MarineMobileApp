@@ -1,4 +1,5 @@
-<ion-header>
+<page-header title='HOME'  ></page-header>
+<ion-header style="z-index:0 !important">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -10,6 +11,7 @@
     <!-- <div end><img src="./assets/imgs/3mm-logo.png" /> </div> -->
   </ion-navbar>
 </ion-header>
+
 
 <ion-content padding>
   <h1 >WELCOME TO<br>
@@ -23,12 +25,12 @@ EXPERIENCE!
     repair and care, serving everyone
     from boat builders to boat owners.
   </p >
-  <button ion-button color="secondary" small center (click)='gotoContestPage()' icon-right>WELCOME ABOARD! <ion-icon name="boat"></ion-icon></button>
-  <img src="assets/imgs/hand-phone.png"/>
+  <button ion-button color="secondary" small center (click)='gotoLandingPage()' icon-right menuToggle>WELCOME ABOARD! <ion-icon name="boat"></ion-icon></button>
+  <!-- <img src="assets/imgs/hand-phone.png"/>
   <div class="big-text">
     WIN A <br>
     JET SKI!
-  </div>
+  </div> -->
 
   <!-- <button ion-button color="secondary" menuToggle>Explore 3M Marine</button> -->
 </ion-content>

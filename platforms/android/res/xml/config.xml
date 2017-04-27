@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.trix.Mmarine381299" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.trix.Mmarine381299" version="0.0.10" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -45,9 +45,6 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
-    <feature name="CsZBar">
-        <param name="android-package" value="org.cloudsky.cordovaPlugins.ZBar" />
-    </feature>
     <feature name="CallNumber">
         <param name="android-package" value="mx.ferreyra.callnumber.CFCallNumber" />
     </feature>
@@ -57,11 +54,16 @@
     <feature name="SocialSharing">
         <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
     </feature>
+    <feature name="CsZBar">
+        <param name="android-package" value="org.cloudsky.cordovaPlugins.ZBar" />
+    </feature>
     <name>3M Marine</name>
     <description>First Marine App.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Trix Team(chakir qatab)</author>
     <content src="index.html" />
     <access origin="*" />
+    <access origin="*facebook.com*" />
+    <allow-navigation href="*facebook*" />
     <allow-navigation href="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-navigation href="*youtube*" />

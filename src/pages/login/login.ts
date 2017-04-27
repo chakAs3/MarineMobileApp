@@ -73,33 +73,46 @@ export class Login {
   facebookCredentialText ;
 
   loginWithFaceBook(){
+    // Facebook.getLoginStatus().then(userdata => {
+    //   this.facebookCredentialText = JSON.stringify(userdata) ;
+    //   Facebook.login(['email', 'public_profile']).then(data=> this.facebookCredentialText ="LOGIN "+ JSON.stringify(data) ).catch(error=>this.facebookCredentialText ="Error "+ JSON.stringify(error) )
     this.auth.signInWithFacebook().then(data =>  {
        //this.facebookCredentialText = res.authResponse;
+       this.facebookCredentialText = JSON.stringify(data);
        console.log("loginWithFaceBook res");
-       this.storage.set('uid', data.uid);
-       this.userProvider.createUser({email:data.auth.email,photoURL:data.auth.photoURL}, data.uid);
-       console.log(data);
-      // const facebookCredential = firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
-      //   this.facebookCredentialText = facebookCredential;
-      //
-      //
-      //   console.log("facebookCredential "+facebookCredential);
-      //
-      // this.facebookCredentialText = firebase.auth() ;
-      // firebase.auth().signInWithCredential(facebookCredential)
-      // .then((success) => {
-      //   this.facebookCredentialText = success;
-      //
-      //   console.log("Firebase success: " + JSON.stringify(success));
-      //   this.message = success;
-      // })
-      // .catch((error) => {
-      //   this.facebookCredentialText = error
-      //   //console.log("Firebase failure: " + JSON.stringify(error));
-      //   //this.message = "Firebase failure: " + JSON.stringify(error);
-      // });
+      //  if( data && data.auth.email ){
+      //  this.storage.set('uid', data.uid);
+      //  this.userProvider.createUser({email:data.auth.email,photoURL:data.auth.photoURL}, data.uid);
+      //  //console.log(data);
+      //  }
+      const facebookCredential = firebase.auth.FacebookAuthProvider.credential(data.authResponse.accessToken);
+        this.facebookCredentialText = facebookCredential;
+
+
+        console.log("facebookCredential "+facebookCredential);
+
+      this.facebookCredentialText = firebase.auth() ;
+      firebase.auth().signInWithCredential(facebookCredential)
+      .then((success) => {
+        this.facebookCredentialText =JSON.stringify(success);// " uid :"+success.uid+" - "+success.email//JSON.stringify(success);
+
+        if( success  ){
+        this.storage.set('uid', success.uid);
+        this.userProvider.createUser({email:success.email,photoURL:success.photoURL}, success.uid);
+        //console.log(data);
+        }
+
+        console.log("Firebase success: " + JSON.stringify(success));
+        this.message = success;
+      })
+      .catch((error) => {
+        this.facebookCredentialText = error
+        //console.log("Firebase failure: " + JSON.stringify(error));
+        //this.message = "Firebase failure: " + JSON.stringify(error);
+      });
 
     } );
+    //});
   }
 
   signInWithGoogle(){

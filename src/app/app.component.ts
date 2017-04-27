@@ -13,6 +13,10 @@ import { MessengerTabsPage }  from '../pages/tabs/tabs';
 import { StoreLocator } from '../pages/store-locator/store-locator'
 import { UtilitiesTabsPage }  from '../pages/utilities-tabs/tabs';
 
+import { WinnerDrawPage }  from '../pages/winnerdraw/users';
+
+import { ShoppingProductsPage } from '../pages/shopping/shopping_products';
+
 
 
 @Component({
@@ -31,6 +35,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Boat Care Products', note:'Find your 3m product', component: ProductsPage, icon: "boat"},
+      { title: '3M Shop',note:'Order your products',  component: ShoppingProductsPage, icon: "cart" },
       { title: 'Help Request',note:'Ask for help',  component: HelpRequestPage, icon: "help-buoy" },
       { title: 'Tips and Tricks', note:'We have some secrets to share', component: TipsPage, icon :"bulb" },
       { title: 'Marine Utilities', note:'Your navigation marine tool',  component: UtilitiesTabsPage, icon :"compass" },
@@ -58,5 +63,8 @@ export class MyApp {
       console.log('should I stay or should I go now');
        this.nav.setRoot(Login);
     });
+  }
+  openDrawPage(){
+    this.nav.setRoot(WinnerDrawPage);
   }
 }
