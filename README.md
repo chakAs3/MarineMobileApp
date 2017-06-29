@@ -26,3 +26,6 @@ Modules ( Pages )
 Using Ionic 2 and Angular 2 was a very fast development environment to build all these modules in 6 days, very easy to maintain and add more features. flexible UX and UI with a native mobile look and feel,Angular 2 improved dramatically the performance using AoT compilation
 
 Using FireBase 3 was a successful implementation of very performant Real-time database, we don't need to care about server infrastructure, all backend data is seamlessly saved and updated, as well as the app is sync and working in offline mode .
+
+new features has been added : a shopping cart module 
+
