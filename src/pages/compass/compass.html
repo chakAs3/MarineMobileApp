@@ -1,0 +1,46 @@
+<page-header title="CONTESTS" ></page-header>
+<ion-header style="z-index: 0 !important">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Compass
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+   <ion-card>
+     <ion-card-content>
+        <div class="compass-visual"  (click)="rotateArrow('90')">
+          <div style="position: absolute;left: 50%;margin: auto;width: 78%;">
+           <img id="compass-visual" src="assets/imgs/compass.png" style="position: relative; left: -50%;">
+         </div>
+         <div id='compass-arrow' class='compass-arrow'>
+           <img src='assets/imgs/compass-arrow.png'>
+         </div>
+        </div>
+
+
+
+        <ion-item>  <h1>{{ message  }}</h1></ion-item>
+        <ion-item>
+           <ion-badge >Lat:{{pos.coords.latitude}} ,Lon:{{pos.coords.longitude  }}</ion-badge>
+        </ion-item>
+      </ion-card-content>
+
+   </ion-card>
+
+
+
+</ion-content>
+
+
+<!-- <ion-footer>
+  <ion-toolbar>
+    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer> -->

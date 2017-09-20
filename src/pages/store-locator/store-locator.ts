@@ -60,7 +60,7 @@ export class StoreLocator {
 
 
 	  Geolocation.getCurrentPosition().then(pos => {
-		  // console.log('lat: ' + pos.coords.latitude + ', lon: ' + pos.coords.longitude);
+		   console.log('lat: ' + pos.coords.latitude + ', lon: ' + pos.coords.longitude);
 		  this.pos = pos ;
 		  this.loadMap();
 	  }).catch(err => console.log(err) );
@@ -76,8 +76,10 @@ export class StoreLocator {
     //console.log(element);
 
     //let map = new GoogleMap(element);
+		let lat = this.pos ? this.pos.coords.latitude : 25.2847538 ;
+		let lon = this.pos ? this.pos.coords.longitude :  55.3530651
 
-   let latLng = new google.maps.LatLng(25.2847538,55.3530651);
+   let latLng = new google.maps.LatLng(lat ,lon);
 
    if(this.pos)  latLng = new google.maps.LatLng(this.pos.coords.latitude,this.pos.coords.longitude);
 
@@ -102,12 +104,31 @@ export class StoreLocator {
       //   //requestSearch.keyword ="3m";
 			//
       //   service.nearbySearch(requestSearch, this.callback);
-
+     let point = lat * lat + lon * lon ;
      this.stores = this.appService.getStores();
 
-		 this.stores.subscribe((stores)=> this.createMarkers(stores))
+
+
+		 this.stores.subscribe((stores)=> {
+			 this.createMarkers(stores);
+       this.storeList = stores.sort(
+
+			(el1,el2)=>{
+
+				let dist1= (lat-el1.coords.lant)*(lat-el1.coords.lant) + (lon-el1.coords.lang)*(lon-el1.coords.lang);
+				let dist2= (lat-el2.coords.lant)*(lat-el2.coords.lant) + (lon-el2.coords.lang)*(lon-el2.coords.lang);
+						console.log(dist1,dist2);
+						return dist1 > dist2;
+
+					} );
+
+      }
+		 );
 
   }
+
+	storeList ;
+
 	createMarkers(results){
 		for (var i = 0; i < results.length; i++) {
 			this.createMarkerFromData(results[i]);

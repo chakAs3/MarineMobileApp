@@ -1,0 +1,75 @@
+<page-header title='{{ data["PRODUCT DESCRIPTION"] }}' subtitle='{{data["Product Family"] }}' ></page-header>
+<ion-header style="z-index:0 !important">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      {{ data["PRODUCT DESCRIPTION"] }}
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-title><h5>{{data["Product Family"] }}</h5></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-fab  top right>
+   <button *ngIf="isshop==false" color="secondary" ion-button small (click)="goToMylist()" style="top:-60px"><ion-icon name="cart"></ion-icon>My list</button>
+   <button *ngIf="isshop" color="secondary" ion-button small (click)="goToMycart()" style="top:-60px"><ion-icon name="cart"></ion-icon>My Cart</button>
+  </ion-fab>
+  <ion-card>
+    <ion-card-header text-wrap>
+      <p> {{ data["PRODUCT DESCRIPTION"] }}</p>
+    </ion-card-header>
+    <ion-card-content>
+      <img class="product-image" [src]="data['PRODUCT PHOTO'] ">
+      <p> {{ data["FULL DESCRIPTION"] }} </p>
+      <div *ngIf='data["VIDEO"]'>
+        <iframe width="100%" height="auto" src='https://www.youtube.com/embed/ke5kfYz9Ybw' frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <ion-item>
+         <p><strong></strong>{{ data["SIZE "][" GRIT"]  }}</p>
+      </ion-item>
+      <div *ngIf='data["PRICE"]'>
+        <ion-item>
+          <h1>Price : {{ data["PRICE"][country]  }}</h1>
+        </ion-item>
+      </div>
+
+
+    </ion-card-content>
+    <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small (click)='goToStores()'>
+        <ion-icon name="cart"></ion-icon>
+        <div>Store</div>
+      </button>
+    </ion-col>
+    <!-- <ion-col>
+      <button ion-button icon-left clear small (click)='goToMylist()'>
+        <ion-icon name="information-circle"></ion-icon>
+        <div>Info</div>
+      </button>
+    </ion-col> -->
+    <ion-col center text-center>
+      <button ion-button icon-left clear small  (click)='addToMylist(data)'>
+        <ion-icon *ngIf="isshop==false" name="star"></ion-icon>
+        <ion-icon *ngIf="isshop" name="cart"></ion-icon>
+        <div *ngIf="isshop==false">Favorite</div>
+        <div *ngIf="isshop">Add to Cart</div>
+      </button>
+    </ion-col>
+  </ion-row>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer>
+<page-footer></page-footer>

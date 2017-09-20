@@ -11,8 +11,11 @@ export class AppService {
   public products: FirebaseListObservable<any>;
 
   public categories :   any;
+  public email;
 
   public sendtoemail:string ;
+
+  public country = "uae";
   constructor(public af: AngularFire,public userProvider: UserProvider,public alertCtrl:AlertController) {
     this.products = this.af.database.list('portfolios',{
       query: {
@@ -81,12 +84,29 @@ export class AppService {
    getMyListProducts(uid){
       return this.af.database.list('mylistproducts/'+uid) ;
    }
+   getMyCartProducts(uid){
+      return this.af.database.list('myshoppingcarts/'+uid) ;
+   }
+   getMyOrders(uid){
+      return this.af.database.list('myshopping/'+uid+'/orders') ;
+   }
    removeFromMyListProducts(uid,p){
       this.af.database.object(`mylistproducts/${uid}/${p.$key}`).remove();
+   }
+   removeFromMyCartProducts(uid,p){
+      this.af.database.object(`myshoppingcarts/${uid}/${p.$key}`).remove();
+   }
+   setQuatity(uid,p,q){
+      this.af.database.object(`myshoppingcarts/${uid}/${p.$key}`).set({quatity:q});
    }
    addtoMyList(key){
      //console.log( `mylistproducts/${userId}/${key}` );
      this.userProvider.getUid().then(userID => this.af.database.object(`mylistproducts/${userID}/${key}`).set(true) );
+
+   }
+   addtoMyCart(key){
+     //console.log( `mylistproducts/${userId}/${key}` );
+     this.userProvider.getUid().then(userID =>  { console.log('userID '+userID); this.af.database.object(`myshoppingcarts/${userID}/${key}`).set({quatity:1}) });
 
    }
    getStores(){
@@ -119,6 +139,14 @@ export class AppService {
       this.presentAlert('Sharing via email is not possible');
       });
 
+   }
+
+   addOrder(products,total){
+     console.log(products);
+    //let pproducts=products.forEach(e=>{ e.$key = null ;console.log(e)})
+     let pproducts=products.map(it=>{ ;return {  id:it.$key,stock:it.info["STOCK NUMBER"],photo:it.info["PRODUCT PHOTO"],description:it.info["PRODUCT DESCRIPTION"],price:it.info.PRICE[this.country],quatity:it.quatity} });
+     console.log(pproducts);
+     this.userProvider.getUid().then(userID => this.af.database.list(`myshopping/${userID}/orders`).push({products:pproducts,email:this.email,to:this.sendtoemail,total:total}) );
    }
 
    presentAlert(message) {

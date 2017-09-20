@@ -1,0 +1,68 @@
+<page-header title='Shopping Products' subtitle='{{mainCategoryName}}' ></page-header>
+<ion-header style="z-index:0 !important">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Boat Care Products
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+  <ion-fab *ngIf='mainCategoryName!="My Cart List"' class="cart" top right>
+   <button color="secondary" ion-button small (click)="goToMycart()"><ion-icon name="cart"></ion-icon>My Cart</button>
+  </ion-fab>
+  <!-- Real floating action button, fixed. It will not scroll with the content -->
+  <ion-fab top left class="currency" #currency>
+    <button ion-fab color="secondary"  small >Currency</button>
+    <ion-fab-list side="right">
+      <button ion-fab (click)='setCurrency("uae")'>AED</button>
+      <button ion-fab (click)='setCurrency("qatar")'>QAR</button>
+      <button ion-fab (click)='setCurrency("bahrain")'>BHD</button>
+      <button ion-fab (click)='setCurrency("kuwait")'>KWD</button>
+
+    </ion-fab-list>
+  </ion-fab>
+  <ion-list>
+
+    <ion-list-header>
+
+    </ion-list-header>
+    <ion-item ion-item *ngFor="let p of products"   text-wrap>
+      <ion-thumbnail item-left>
+        <img [src]='p.info["PRODUCT PHOTO"]'>
+      </ion-thumbnail>
+      <p>{{p.info["PRODUCT DESCRIPTION"] }}</p>
+      <p><strong>SKU:</strong>{{p.info["STOCK NUMBER"] }}</p>
+      <ion-badge *ngIf='p.info["PRICE"]'> {{p.info["PRICE"][country] }} </ion-badge>
+      <ion-badge *ngIf='mainCategoryName=="My Cart List"' style="background-color:white;margin-left:20px;"> <button ion-button clear (click)="setQuatity(p,p.quatity+1);" small>+</button><label style="color:black" >{{p.quatity}}</label><button ion-button clear (click)="(p.quatity>1)?setQuatity(p,p.quatity-1):p.quatity;" small>-</button></ion-badge>
+      <hr>
+      <button ion-button clear item-right *ngIf='mainCategoryName!="My Cart List"' (click)="goProductDetail(p.info)" >View</button>
+      <button ion-button icon-left clear small *ngIf='mainCategoryName=="My Cart List"' (click)="goProductDetail(p.info)" left>
+        <ion-icon name="eye"></ion-icon>
+        <div>View</div>
+      </button>
+      <button ion-button icon-left clear small *ngIf='mainCategoryName=="My Cart List"' (click)='removeFromList(p)' left>
+        <ion-icon name="trash"></ion-icon>
+        <div>Remove</div>
+      </button>
+    </ion-item>
+
+  </ion-list>
+  <ion-item *ngIf='mainCategoryName=="My Cart List"'><button ion-button small (click)="contactForlist()" *ngIf='!orderDone' >Make the Order</button> Total:{{total}} {{currencies[country]}} <div *ngIf='orderDone' right-form style="font-size:12px"> Order sent. You will receive email confirmation</div></ion-item>
+
+  <ion-item *ngIf='mainCategoryName=="My Cart List"'><button ion-button small (click)="gotoMyOrders()" >My Previous orders</button> </ion-item>
+
+</ion-content>
+
+
+ <ion-footer>
+  <ion-toolbar>
+    <ion-title item-right> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer>
+<page-footer></page-footer>

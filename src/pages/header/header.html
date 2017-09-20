@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      {{ title  }}
+    </ion-title>
+
+    <ion-buttons end>
+     <button ion-button (click)="goMessengerPage()" left><ion-badge  color="secondary" *ngIf="unreads_msg"  >{{ unreads_msg }}</ion-badge></button>  
+     <div (click)="goHomePage()" ion-button ><img src="./assets/imgs/3mm-logo.png" /></div>
+
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar *ngIf="subtitle">
+    <ion-title><h5>{{ subtitle  }}</h5></ion-title>
+  </ion-toolbar>
+</ion-header>

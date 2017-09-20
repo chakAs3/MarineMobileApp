@@ -1,0 +1,36 @@
+<page-header title='Users'  ></page-header>
+<ion-header style="z-index:0 !important">
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Winner Draw</ion-title>
+        <ion-buttons end>
+            <ion-spinner color="light" *ngIf="!(users | async)"></ion-spinner>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab top right>
+   <button color="secondary" ion-button small (click)="generateWinner()"><ion-icon name="profile"></ion-icon>Pick Random Winner</button>
+  </ion-fab>
+    <ion-list>
+      <ion-item   *ngFor="let user of users_data "  [id]="user.$key">
+            <div [class]="user.winner?'winner':''">
+             <ion-avatar item-left>
+                <img *ngIf="!user.picture" src="assets/imgs/avatar.jpeg">
+                <img *ngIf="user.picture" src="{{user.picture}}">
+             </ion-avatar>
+             <h5>{{  user.displayName  }}</h5>
+             <h5>{{  user.email }}</h5>
+             <p> {{ user.city }}</p>
+             <p> {{ user.mobile }}</p>
+             <h2 *ngIf="user.winner"><ion-icon name="thumbs-up"></ion-icon>The Winner</h2>
+           </div>
+
+
+      </ion-item>
+    </ion-list>
+
+</ion-content>

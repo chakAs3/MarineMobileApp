@@ -22768,6 +22768,28 @@ page-products ion-list-header ion-label {
   color: #192758;
 }
 
+page-shopping_products .fit-thumbnail {
+  object-fit: cover;
+}
+
+page-shopping_products ion-thumbnail img {
+  width: auto !important;
+  height: 80px;
+  margin: auto;
+}
+
+page-shopping_products .currency {
+  top: -15px;
+}
+
+page-shopping_products .cart {
+  top: -15px;
+}
+
+page-shopping_products ion-list-header {
+  height: 60px;
+}
+
 .ios page-map .scroll-content, .md page-map .scroll-content {
   height: 100%;
 }

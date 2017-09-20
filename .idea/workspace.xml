@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0614cd74-e8fc-42da-bca2-e4509771a00e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/android/3MMarine.keystore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape~ipad.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-40.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-50.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-50@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-50@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-60.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-60@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-60@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-60@3x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-60@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-72.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-72@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-72@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-76.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-83.5@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-83.5@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-small.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-small.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-small@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-small@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-small@3x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon-small@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon@2x.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/AppIcon.appiconset/icon@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-568h@2x~iphone.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-568h@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-667h.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-667h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-736h.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Landscape-736h.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Landscape-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Landscape@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Portrait@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default-Portrait~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default@2x~iphone.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default~iphone.png" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/Images.xcassets/LaunchImage.launchimage/Default~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-50@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-72@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-76@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-83.5@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-83.5@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-568h@2x~iphone.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-568h@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-667h.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-667h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-736h.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape-736h.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default@2x~iphone.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default~iphone.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/3M Marine/3M Marine-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/3M Marine/3M Marine-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/platforms/ios/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.service.ts" afterPath="$PROJECT_DIR$/src/app/app.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/contest/contest-intro.html" afterPath="$PROJECT_DIR$/src/pages/contest/contest-intro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/contest/contest-intro.ts" afterPath="$PROJECT_DIR$/src/pages/contest/contest-intro.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/helpRequest/helpRequest.html" afterPath="$PROJECT_DIR$/src/pages/helpRequest/helpRequest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.html" afterPath="$PROJECT_DIR$/src/pages/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/home.scss" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/products/categories_products.html" afterPath="$PROJECT_DIR$/src/pages/products/categories_products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/products/products.scss" afterPath="$PROJECT_DIR$/src/pages/products/products.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/store-locator/store-locator.ts" afterPath="$PROJECT_DIR$/src/pages/store-locator/store-locator.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/user-provider/user-provider.ts" afterPath="$PROJECT_DIR$/src/providers/user-provider/user-provider.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="contest-intro.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/contest/contest-intro.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="39" column="97" lean-forward="false" selection-start-line="39" selection-start-column="97" selection-end-line="39" selection-end-column="97" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+                <marker date="1487841306000" expanded="true" signature="441:452" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="88" column="103" lean-forward="false" selection-start-line="88" selection-start-column="103" selection-end-line="88" selection-end-column="103" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user-provider.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/providers/user-provider/user-provider.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/project.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpRequest.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/helpRequest/helpRequest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ant.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/ant.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contest-intro.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/contest/contest-intro.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="45" column="381" lean-forward="false" selection-start-line="45" selection-start-column="381" selection-end-line="45" selection-end-column="381" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#ion-slide#1;n#ion-slides#0;n#ion-content#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Chakir QATAB &lt;javachakir@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
+        <option value="$PROJECT_DIR$/src/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
+        <option value="$PROJECT_DIR$/src/pages/store-locator/store-locator.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.service.ts" />
+        <option value="$PROJECT_DIR$/src/pages/contest/contest-intro.ts" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/pages/contest/contest-intro.html" />
+        <option value="$PROJECT_DIR$/src/providers/user-provider/user-provider.ts" />
+        <option value="$PROJECT_DIR$/platforms/android/secure.properties" />
+        <option value="$PROJECT_DIR$/platforms/android/ant.properties" />
+        <option value="$PROJECT_DIR$/platforms/android/release-signing.properties" />
+        <option value="$PROJECT_DIR$/src/pages/helpRequest/helpRequest.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/plugins/cordova-plugin-googleplus/hooks/ios/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="43" />
+    <option name="width" value="1260" />
+    <option name="height" value="676" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Pug/Jade</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3MMarineApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3MMarineApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="typescript-compiler-editor-notification" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/platforms/android" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0614cd74-e8fc-42da-bca2-e4509771a00e" name="Default" comment="" />
+      <created>1487758695900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1487758695900</updated>
+      <workItem from="1487758698389" duration="559000" />
+      <workItem from="1487759458849" duration="5857000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit from WebStorm home changes">
+      <created>1487759548078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1487759548078</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6416000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="43" width="1260" height="676" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294893" sideWeight="0.5031746" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294893" sideWeight="0.4968254" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit from WebStorm home changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit from WebStorm home changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1487758962000" expanded="true" signature="343:349" ph="{&quot;selector&quot;: 'page-home'...}" />
+            <marker date="1487758962000" expanded="true" signature="817:822" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1487758962000" expanded="true" signature="343:349" ph="{&quot;selector&quot;: 'page-home'...}" />
+            <marker date="1487758962000" expanded="true" signature="817:822" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/compass/compass.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/store-locator/store-locator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="73" column="62" lean-forward="false" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="88" column="103" lean-forward="false" selection-start-line="88" selection-start-column="103" selection-end-line="88" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/contest/contest-intro.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="39" column="97" lean-forward="false" selection-start-line="39" selection-start-column="97" selection-end-line="39" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1487841306000" expanded="true" signature="441:452" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/contest/contest-intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="45" column="381" lean-forward="false" selection-start-line="45" selection-start-column="381" selection-end-line="45" selection-end-column="381" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#ion-slide#1;n#ion-slides#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/user-provider/user-provider.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/ant.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/release-signing.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/helpRequest/helpRequest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

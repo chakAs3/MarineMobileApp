@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/chakirqatab/Documents/Trix workspace/Apps/3MMarineApp v2/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/chakirqatab/Documents/Trix workspace/Apps/3MMarineApp v2/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/qchakir/Documents/Trix Workspace/Apps/3MMarineApp v2/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/qchakir/Documents/Trix Workspace/Apps/3MMarineApp v2/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>

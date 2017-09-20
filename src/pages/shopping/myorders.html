@@ -1,0 +1,43 @@
+<page-header title='Shopping Products' subtitle='My Orders' ></page-header>
+<ion-header style="z-index:0 !important">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Boat Care Products
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+  <ion-fab class="cart" top right>
+   <button color="secondary" ion-button small (click)="goToMycart()"><ion-icon name="cart"></ion-icon>My Cart</button>
+  </ion-fab>
+  <!-- Real floating action button, fixed. It will not scroll with the content -->
+
+  <ion-list>
+
+    <ion-list-header>
+
+    </ion-list-header>
+    <ion-item ion-item *ngFor="let p of products"   text-wrap>
+      <p> Order Id:{{p.$key }} </p>
+      <ion-badge >Total: {{p.total }} </ion-badge>
+      <hr>
+
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+
+
+ <ion-footer>
+  <ion-toolbar>
+    <ion-title item-right> <img height="30" src="assets/3mlogo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-footer>
+<page-footer></page-footer>

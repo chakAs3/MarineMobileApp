@@ -1,0 +1,22 @@
+page-shopping_products {
+.fit-thumbnail { object-fit: cover; }
+
+
+ion-thumbnail img {
+     width: auto !important;
+     height: 80px;
+     margin: auto;
+}
+.currency{
+  top:-15px;
+
+}
+.cart{
+  top:-15px;
+
+}
+ion-list-header {
+  height: 60px;
+}
+
+}
